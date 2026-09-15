@@ -1,0 +1,1179 @@
+[
+  {
+    "slug": "diwali",
+    "name": "Diwali Festival of Lights",
+    "region": "Pan-India",
+    "month": "October / November",
+    "type": "festival",
+    "lat": 25.3176,
+    "lng": 82.9739,
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Diwali",
+      "hi": "दिवाली",
+      "ta": "தீபாவளி",
+      "te": "దీపావళి",
+      "bn": "দীপাবলি",
+      "mr": "दिवाळी",
+      "gu": "દિવાળી",
+      "kn": "ದೀಪಾವಳಿ",
+      "pa": "ਦੀਵਾਲੀ"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop",
+    "wikiTitle": "Diwali",
+    "youtubeVideoId": "Hrr5yTH5R3Q",
+    "story": {
+      "origin": "Diwali, the festival of lights, marks the triumphant return of Lord Rama to Ayodhya after 14 years of exile and his victory over the demon king Ravana.",
+      "significance": "It symbolizes the spiritual victory of light over darkness, good over evil, and knowledge over ignorance.",
+      "deity": [
+        "Lord Rama",
+        "Goddess Lakshmi",
+        "Lord Ganesha"
+      ],
+      "scriptures": [
+        "Ramayana",
+        "Skanda Purana"
+      ]
+    },
+    "celebration": {
+      "duration": "5 days",
+      "rituals": [
+        "Lighting oil lamps (diyas) and candles",
+        "Bursting firecrackers",
+        "Performing Lakshmi Puja for prosperity",
+        "Exchanging gifts and sweets with family and friends"
+      ],
+      "days": [
+        {
+          "day": "Day 1: Dhanteras",
+          "activity": "Buying gold or new utensils as a sign of auspiciousness."
+        },
+        {
+          "day": "Day 2: Naraka Chaturdashi",
+          "activity": "Early morning oil bath and lighting the first lamps."
+        },
+        {
+          "day": "Day 3: Lakshmi Puja",
+          "activity": "The main day of Diwali, worshipping the Goddess of Wealth."
+        },
+        {
+          "day": "Day 4: Govardhan Puja",
+          "activity": "Worshipping Lord Krishna and preparing a mountain of food."
+        },
+        {
+          "day": "Day 5: Bhai Dooj",
+          "activity": "Celebrating the bond between brothers and sisters."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Maharashtra",
+          "custom": "Starts with Vasubaras, followed by a grand feast called Faral."
+        },
+        {
+          "state": "West Bengal",
+          "custom": "Celebrated as Kali Puja, worshipping Goddess Kali at night."
+        },
+        {
+          "state": "Tamil Nadu",
+          "custom": "Celebrated as Deepavali a day earlier, with a customary oil bath."
+        }
+      ],
+      "specialFood": [
+        "Kaju Katli",
+        "Gulab Jamun",
+        "Ladoo",
+        "Chakli",
+        "Gujiya"
+      ],
+      "decorations": [
+        "Diyas",
+        "Rangoli",
+        "Marigold flowers",
+        "Fairy lights"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Diwali"
+        },
+        {
+          "language": "hi",
+          "text": "शुभ दीपावली"
+        },
+        {
+          "language": "ta",
+          "text": "இனிய தீபாவளி நல்வாழ்த்துக்கள்"
+        },
+        {
+          "language": "mr",
+          "text": "दिवाळीच्या हार्दिक शुभेच्छा"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "holi",
+    "name": "Holi Festival of Colors",
+    "region": "Pan-India",
+    "month": "March",
+    "type": "festival",
+    "lat": 27.4924,
+    "lng": 77.6737,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Holi_Festival_in_Nandgaon.jpg",
+    "wikipedia_titles": {
+      "en": "Holi",
+      "hi": "होली",
+      "ta": "ஹோலி",
+      "te": "హోలీ",
+      "bn": "হোলি",
+      "mr": "होळी",
+      "gu": "હોળી"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Holi_Festival_in_Nandgaon.jpg",
+    "wikiTitle": "Holi",
+    "youtubeVideoId": "9o9M5WdE-8o",
+    "story": {
+      "origin": "Holi commemorates the burning of the demoness Holika and the salvation of Prahlad, a devout follower of Lord Vishnu. It also celebrates the divine love of Radha and Krishna.",
+      "significance": "It marks the arrival of spring, the end of winter, and the blossoming of love. It is a day to forgive, make peace, and repair broken relationships.",
+      "deity": [
+        "Lord Krishna",
+        "Radha",
+        "Lord Vishnu"
+      ],
+      "scriptures": [
+        "Bhagavata Purana"
+      ]
+    },
+    "celebration": {
+      "duration": "2 days",
+      "rituals": [
+        "Lighting the Holika bonfire (Holika Dahan) on the eve of Holi.",
+        "Playing with colored powders (Gulal) and water.",
+        "Singing folk songs and dancing to the beats of the dhol.",
+        "Drinking traditional beverages like Thandai."
+      ],
+      "days": [
+        {
+          "day": "Day 1: Holika Dahan",
+          "activity": "Gathering around a bonfire to symbolize the burning of evil."
+        },
+        {
+          "day": "Day 2: Rangwali Holi",
+          "activity": "The grand carnival of colors, music, and feasting."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Uttar Pradesh (Mathura)",
+          "custom": "Lathmar Holi, where women playfully beat men with sticks."
+        },
+        {
+          "state": "West Bengal",
+          "custom": "Known as Dol Jatra, celebrating with swings and palanquins for deities."
+        },
+        {
+          "state": "Punjab",
+          "custom": "Hola Mohalla, demonstrating martial arts and bravery."
+        }
+      ],
+      "specialFood": [
+        "Gujiya",
+        "Thandai",
+        "Malpua",
+        "Dahi Vada",
+        "Bhang"
+      ],
+      "decorations": [
+        "Colorful Rangolis",
+        "Flower garlands",
+        "Water balloons"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Holi"
+        },
+        {
+          "language": "hi",
+          "text": "होली की शुभकामनाएँ"
+        },
+        {
+          "language": "bn",
+          "text": "শুভ দোলযাত্রা"
+        },
+        {
+          "language": "pa",
+          "text": "ਹੋਲੀ ਦੀਆਂ ਮੁਬਾਰਕਾਂ"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "durga-puja",
+    "name": "Kolkata Durga Puja Grand Utsav",
+    "region": "West Bengal",
+    "month": "September / October",
+    "type": "festival",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Durga_Puja",
+      "hi": "दुर्गा_पूजा",
+      "bn": "দুর্গাপূজা",
+      "ta": "துர்க்கா_பூஜை"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&auto=format&fit=crop",
+    "wikiTitle": "Durga_Puja",
+    "youtubeVideoId": "bYdM0t1NnIQ",
+    "story": {
+      "origin": "Durga Puja celebrates the victory of the ten-armed goddess Durga over the shape-shifting buffalo demon Mahishasura.",
+      "significance": "It marks the triumph of good over evil and is a celebration of female power (Shakti). It is the most significant socio-cultural event in Bengali culture.",
+      "deity": [
+        "Goddess Durga",
+        "Lord Shiva",
+        "Saraswati",
+        "Lakshmi",
+        "Ganesha",
+        "Kartikeya"
+      ],
+      "scriptures": [
+        "Devi Mahatmya",
+        "Markandeya Purana"
+      ]
+    },
+    "celebration": {
+      "duration": "10 days (last 5 are major)",
+      "rituals": [
+        "Setting up elaborate pandals (temporary stages).",
+        "Performing the Chandi Path and Aarti.",
+        "Dhunuchi Naach (a traditional dance with incense).",
+        "Immersion (Visarjan) of the idol in water on the final day."
+      ],
+      "days": [
+        {
+          "day": "Mahalaya",
+          "activity": "Inviting the goddess to earth through early morning chants."
+        },
+        {
+          "day": "Saptami",
+          "activity": "The bathing of the Navapatrika (nine plants) symbolizing the goddess."
+        },
+        {
+          "day": "Ashtami",
+          "activity": "The most important day, featuring Pushpanjali and Sandhi Puja."
+        },
+        {
+          "day": "Navami",
+          "activity": "Maha Aarti and distribution of Bhog (sacred food)."
+        },
+        {
+          "day": "Dashami",
+          "activity": "Sindoor Khela (playing with vermilion) and idol immersion."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "West Bengal",
+          "custom": "Massive, artistic pandals across Kolkata and grand street food festivals."
+        },
+        {
+          "state": "Assam",
+          "custom": "Community pujas with traditional Assamese cultural programs."
+        },
+        {
+          "state": "Odisha",
+          "custom": "Intricate silver filigree decorations (Chandi Medha) on the idols."
+        }
+      ],
+      "specialFood": [
+        "Khichuri Bhog",
+        "Luchi",
+        "Alur Dom",
+        "Sandesh",
+        "Rosogolla"
+      ],
+      "decorations": [
+        "Pandals",
+        "Dhak (drums)",
+        "Alpana (floor art)",
+        "Flower garlands"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Durga Puja"
+        },
+        {
+          "language": "bn",
+          "text": "শুভ শারদীয়া"
+        },
+        {
+          "language": "hi",
+          "text": "दुर्गा पूजा की शुभकामनाएँ"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ganesh-chaturthi",
+    "name": "Ganesh Chaturthi Mahotsav",
+    "region": "Maharashtra",
+    "month": "August / September",
+    "type": "festival",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Ganesh_Chaturthi",
+      "hi": "गणेश_चतुर्थी",
+      "mr": "गणेशोत्सव",
+      "ta": "விநாயகர்_சதுர்த்தி",
+      "te": "వినాయక_చవితి"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&auto=format&fit=crop",
+    "wikiTitle": "Ganesh_Chaturthi",
+    "youtubeVideoId": "V5l92r2xMhE",
+    "story": {
+      "origin": "Ganesh Chaturthi celebrates the birth of Lord Ganesha, the elephant-headed deity of wisdom, prosperity, and good fortune.",
+      "significance": "He is worshipped as the remover of obstacles (Vighnaharta) and the god of new beginnings, whose blessings are sought before any new venture.",
+      "deity": [
+        "Lord Ganesha",
+        "Goddess Parvati",
+        "Lord Shiva"
+      ],
+      "scriptures": [
+        "Ganesha Purana",
+        "Mudgala Purana"
+      ]
+    },
+    "celebration": {
+      "duration": "10 days",
+      "rituals": [
+        "Bringing home clay idols of Lord Ganesha (Pranapratishhtha).",
+        "Offering his favorite sweet, Modak.",
+        "Singing Aartis and performing daily pujas.",
+        "Grand procession and immersion (Visarjan) of the idol on Anant Chaturdashi."
+      ],
+      "days": [
+        {
+          "day": "Day 1: Chaturthi",
+          "activity": "Welcoming the idol home and performing the initial setup puja."
+        },
+        {
+          "day": "Day 10: Anant Chaturdashi",
+          "activity": "The massive, energetic street procession leading to the idol's immersion."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Maharashtra",
+          "custom": "The epicentre of celebrations with colossal public pandals in Mumbai and Pune."
+        },
+        {
+          "state": "Goa",
+          "custom": "Traditional family gatherings and classical music concerts."
+        },
+        {
+          "state": "Karnataka",
+          "custom": "Worshipping Gowri (Parvati) a day prior to Ganesha."
+        }
+      ],
+      "specialFood": [
+        "Modak",
+        "Puran Poli",
+        "Karanji",
+        "Ladoo",
+        "Patholi"
+      ],
+      "decorations": [
+        "Marigold garlands",
+        "Lighting",
+        "Makhar (decorated backdrop)"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Ganesh Chaturthi"
+        },
+        {
+          "language": "mr",
+          "text": "गणेश चतुर्थीच्या हार्दिक शुभेच्छा"
+        },
+        {
+          "language": "hi",
+          "text": "गणेश चतुर्थी की शुभकामनाएँ"
+        },
+        {
+          "language": "ta",
+          "text": "இனிய விநாயகர் சதுர்த்தி வாழ்த்துக்கள்"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "pongal",
+    "name": "Thai Pongal Harvest Festival",
+    "region": "Tamil Nadu",
+    "month": "January",
+    "type": "festival",
+    "lat": 10.7828,
+    "lng": 79.1318,
+    "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Pongal_(festival)",
+      "hi": "पोंगल",
+      "ta": "பொங்கல்_(திருவிழா)"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=800&auto=format&fit=crop",
+    "wikiTitle": "Pongal_(festival)",
+    "youtubeVideoId": "u_p-Xz52y2w",
+    "story": {
+      "origin": "Pongal is an ancient Tamil harvest festival thanking the Sun God, nature, and farm animals for bringing a bountiful harvest.",
+      "significance": "The word 'Pongal' means 'to boil over', symbolizing abundance and prosperity as newly harvested rice boils over in clay pots.",
+      "deity": [
+        "Surya (Sun God)",
+        "Indra"
+      ],
+      "scriptures": [
+        "Sangam literature references"
+      ]
+    },
+    "celebration": {
+      "duration": "4 days",
+      "rituals": [
+        "Discarding old belongings in a bonfire (Bhogi).",
+        "Cooking the Pongal dish in an earthen pot at sunrise.",
+        "Decorating and worshipping cattle (Mattu Pongal).",
+        "Creating Kolam (rice powder patterns) at home entrances."
+      ],
+      "days": [
+        {
+          "day": "Bhogi Pongal",
+          "activity": "Cleaning the house and burning old items."
+        },
+        {
+          "day": "Surya Pongal",
+          "activity": "The main day, cooking the sweet Pongal outdoors facing the sun."
+        },
+        {
+          "day": "Mattu Pongal",
+          "activity": "Bathing, painting the horns, and worshipping farm cattle."
+        },
+        {
+          "day": "Kaanum Pongal",
+          "activity": "Visiting relatives and friends."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Tamil Nadu",
+          "custom": "Jallikattu (bull-taming sport) and grand village feasts."
+        },
+        {
+          "state": "Andhra Pradesh",
+          "custom": "Celebrated similarly as Makar Sankranti with cockfights and kite flying."
+        }
+      ],
+      "specialFood": [
+        "Sweet Pongal (Chakkara Pongal)",
+        "Ven Pongal",
+        "Sugarcane",
+        "Vadai"
+      ],
+      "decorations": [
+        "Kolam",
+        "Sugarcane stalks",
+        "Mango leaves",
+        "Turmeric plants"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Pongal"
+        },
+        {
+          "language": "ta",
+          "text": "இனிய பொங்கல் நல்வாழ்த்துக்கள்"
+        },
+        {
+          "language": "hi",
+          "text": "पोंगल की शुभकामनाएँ"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "onam",
+    "name": "Onam Pookkalam & Boat Race",
+    "region": "Kerala",
+    "month": "August / September",
+    "type": "festival",
+    "lat": 9.4981,
+    "lng": 76.3388,
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Onam",
+      "hi": "ओणम",
+      "ml": "ഓണം",
+      "ta": "ஓணம்"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&auto=format&fit=crop",
+    "wikiTitle": "Onam",
+    "youtubeVideoId": "5aY2B52wR8E",
+    "story": {
+      "origin": "Onam commemorates the annual homecoming of the legendary, righteous King Mahabali from the underworld to visit his subjects in Kerala.",
+      "significance": "It is a harvest festival that embodies Kerala's cultural ethos, promoting equality, prosperity, and harmony.",
+      "deity": [
+        "King Mahabali",
+        "Vamana (Vishnu avatar)"
+      ],
+      "scriptures": [
+        "Bhagavata Purana"
+      ]
+    },
+    "celebration": {
+      "duration": "10 days",
+      "rituals": [
+        "Creating intricate floral carpets (Pookkalam).",
+        "Preparing the grand multi-course vegetarian feast (Onasadya) served on a banana leaf.",
+        "Performing traditional dances like Thiruvathira Kali and Pulikali (tiger dance).",
+        "Spectacular Vallam Kali (snake boat races)."
+      ],
+      "days": [
+        {
+          "day": "Atham",
+          "activity": "The start of Onam with a small Pookkalam."
+        },
+        {
+          "day": "Thiruvonam",
+          "activity": "The main day of the festival, marked by the grand Onasadya."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Kerala",
+          "custom": "The entire state shuts down for cultural extravaganzas, boat races, and feasts."
+        },
+        {
+          "state": "Global Malayali Diaspora",
+          "custom": "Organizing community Sadhyas and cultural events wherever they reside."
+        }
+      ],
+      "specialFood": [
+        "Onasadya (26+ dishes)",
+        "Payasam",
+        "Pappadam",
+        "Banana chips"
+      ],
+      "decorations": [
+        "Pookkalam (Floral carpet)",
+        "Nilavilakku (brass lamp)",
+        "Kathakali masks"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Onam"
+        },
+        {
+          "language": "ml",
+          "text": "ഓണാശംസകൾ"
+        },
+        {
+          "language": "hi",
+          "text": "ओणम की शुभकामनाएँ"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "baisakhi",
+    "name": "Baisakhi Harvest & Bhangra Fest",
+    "region": "Punjab",
+    "month": "April",
+    "type": "festival",
+    "lat": 31.62,
+    "lng": 74.8765,
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Vaisakhi",
+      "hi": "बैसाखी",
+      "pa": "ਵਿਸਾਖੀ"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&auto=format&fit=crop",
+    "wikiTitle": "Vaisakhi",
+    "youtubeVideoId": "P8fTzVdEaRw",
+    "story": {
+      "origin": "Baisakhi is a historical and religious festival in Sikhism that commemorates the formation of the Khalsa panth of warriors under Guru Gobind Singh in 1699. It is also an ancient spring harvest festival.",
+      "significance": "It represents bravery, community solidarity, and gratitude to God for the bountiful wheat harvest.",
+      "deity": [
+        "Guru Gobind Singh (Reverence)"
+      ],
+      "scriptures": [
+        "Guru Granth Sahib"
+      ]
+    },
+    "celebration": {
+      "duration": "1 day",
+      "rituals": [
+        "Bathing in holy rivers before dawn.",
+        "Visiting Gurdwaras and listening to Kirtans.",
+        "Participating in Nagar Kirtan street processions.",
+        "Performing the energetic Bhangra and Giddha dances."
+      ],
+      "days": [
+        {
+          "day": "Baisakhi Day",
+          "activity": "Special prayers at the Gurdwara, followed by Langar and community fairs."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Punjab",
+          "custom": "Vibrant village fairs (Melas), wrestling bouts, and folk music."
+        },
+        {
+          "state": "Haryana",
+          "custom": "Organizing massive cattle fairs and festive gatherings."
+        }
+      ],
+      "specialFood": [
+        "Kada Prasad",
+        "Makki di Roti",
+        "Sarson ka Saag",
+        "Sweet Lassi"
+      ],
+      "decorations": [
+        "Nishan Sahib (Sikh flag)",
+        "Yellow and orange flowers"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Baisakhi"
+        },
+        {
+          "language": "pa",
+          "text": "ਵਿਸਾਖੀ ਦੀਆਂ ਮੁਬਾਰਕਾਂ"
+        },
+        {
+          "language": "hi",
+          "text": "बैसाखी की शुभकामनाएँ"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "navratri",
+    "name": "Navratri Garba Nights",
+    "region": "Gujarat",
+    "month": "September / October",
+    "type": "festival",
+    "lat": 23.0225,
+    "lng": 72.5714,
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Navaratri",
+      "hi": "नवरात्रि",
+      "gu": "નવરાત્રી",
+      "ta": "நவராத்திரி"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=800&auto=format&fit=crop",
+    "wikiTitle": "Navaratri",
+    "youtubeVideoId": "0vT-7521h0E",
+    "story": {
+      "origin": "Navratri, meaning 'nine nights', honors the divine feminine (Devi) and celebrates the victory of Goddess Durga over the demon Mahishasura.",
+      "significance": "It symbolizes purity, power, and wisdom. Each of the nine days is dedicated to a different manifestation of Goddess Durga.",
+      "deity": [
+        "Goddess Durga",
+        "Goddess Lakshmi",
+        "Goddess Saraswati"
+      ],
+      "scriptures": [
+        "Devi Mahatmya"
+      ]
+    },
+    "celebration": {
+      "duration": "9 nights and 10 days",
+      "rituals": [
+        "Fasting during the day.",
+        "Dancing the Garba and Dandiya Raas at night.",
+        "Setting up the Ghatasthapana (a sacred pot).",
+        "Kanya Puja, worshipping young girls as forms of the Goddess."
+      ],
+      "days": [
+        {
+          "day": "Days 1-3",
+          "activity": "Worshipping Durga for power and destruction of impurities."
+        },
+        {
+          "day": "Days 4-6",
+          "activity": "Worshipping Lakshmi for spiritual wealth and prosperity."
+        },
+        {
+          "day": "Days 7-9",
+          "activity": "Worshipping Saraswati for wisdom and knowledge."
+        },
+        {
+          "day": "Day 10: Dussehra",
+          "activity": "Celebrating the victory of good over evil."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Gujarat",
+          "custom": "Vibrant and tireless Garba and Dandiya nights."
+        },
+        {
+          "state": "South India",
+          "custom": "Displaying dolls on stepped platforms called Bommai Golu."
+        },
+        {
+          "state": "North India",
+          "custom": "Staging the Ramlila (theatrical enactment of Ramayana) culminating on Dussehra."
+        }
+      ],
+      "specialFood": [
+        "Sabudana Khichdi",
+        "Kuttu ki Puri",
+        "Makhana",
+        "Singhare ka Halwa"
+      ],
+      "decorations": [
+        "Golu Dolls",
+        "Garba pots",
+        "Floral rangoli",
+        "Dandiya sticks"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Happy Navratri"
+        },
+        {
+          "language": "gu",
+          "text": "નવરાત્રીની શુભકામનાઓ"
+        },
+        {
+          "language": "hi",
+          "text": "नवरात्रि की शुभकामनाएँ"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "chhatt-puja",
+    "name": "Chhath Puja Sun Worship",
+    "region": "Bihar",
+    "month": "October / November",
+    "type": "festival",
+    "lat": 25.5941,
+    "lng": 85.1376,
+    "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Chhath",
+      "hi": "छठ_पूजा",
+      "mai": "छठि_माय"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=800&auto=format&fit=crop",
+    "wikiTitle": "chhatt-puja",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "makar-sankranti",
+    "name": "Makar Sankranti Kite Festival",
+    "region": "Pan-India",
+    "month": "January",
+    "type": "festival",
+    "lat": 23.0225,
+    "lng": 72.5714,
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Makar_Sankranti",
+      "hi": "मकर_संक्रांति",
+      "mr": "मकर_संक्रांत",
+      "te": "మకర_సంక్రాంతి"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=800&auto=format&fit=crop",
+    "wikiTitle": "makar-sankranti",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "rath-yatra",
+    "name": "Puri Jagannath Rath Yatra",
+    "region": "Odisha",
+    "month": "June / July",
+    "type": "festival",
+    "lat": 19.8135,
+    "lng": 85.8312,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Ratha_Yatra_(Puri)",
+      "hi": "रथ_यात्रा_(पुरी)",
+      "or": "ରଥଯାତ୍ରା"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop",
+    "wikiTitle": "rath-yatra",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "bihu",
+    "name": "Rongali Bihu Spring Festival",
+    "region": "Assam",
+    "month": "April",
+    "type": "festival",
+    "lat": 26.1445,
+    "lng": 91.7362,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Bihu",
+      "hi": "बिहू",
+      "as": "বিহু"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&auto=format&fit=crop",
+    "wikiTitle": "bihu",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "maha-shivratri",
+    "name": "Maha Shivratri Night Celebrations",
+    "region": "Pan-India",
+    "month": "February / March",
+    "type": "festival",
+    "lat": 25.3176,
+    "lng": 82.9739,
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Maha_Shivaratri",
+      "hi": "महाशिवरात्रि",
+      "ta": "மகா_சிவராத்திரி",
+      "te": "మహా_శివరాత్రి"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&auto=format&fit=crop",
+    "wikiTitle": "maha-shivratri",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "janmashtami",
+    "name": "Gokulashtami & Dahi Handi",
+    "region": "Pan-India",
+    "month": "August / September",
+    "type": "festival",
+    "lat": 27.4924,
+    "lng": 77.6737,
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Krishna_Janmashtami",
+      "hi": "कृष्ण_जन्माष्टमी",
+      "ta": "கிருஷ்ண_ஜென்மாஷ்டமி"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&auto=format&fit=crop",
+    "wikiTitle": "janmashtami",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "ugadi",
+    "name": "Ugadi & Gudi Padwa New Year",
+    "region": "Andhra Pradesh / Telangana / Karnataka",
+    "month": "March / April",
+    "type": "festival",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Ugadi",
+      "hi": "उगादि",
+      "te": "ఉగాది",
+      "kn": "ಯುਗਾది"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&auto=format&fit=crop",
+    "wikiTitle": "ugadi",
+    "youtubeVideoId": "",
+    "story": {
+      "origin": "Details being updated.",
+      "significance": "An important festival in India.",
+      "deity": [],
+      "scriptures": []
+    },
+    "celebration": {
+      "duration": "Varies",
+      "rituals": [],
+      "days": [],
+      "stateWiseCelebrations": [],
+      "specialFood": [],
+      "decorations": [],
+      "greetings": []
+    }
+  },
+  {
+    "slug": "eid",
+    "name": "Eid al-Fitr",
+    "region": "Pan-India",
+    "month": "Varies (Islamic Calendar)",
+    "type": "festival",
+    "lat": 28.6507,
+    "lng": 77.2334,
+    "image": "https://images.unsplash.com/photo-1596791223961-d70c4cc6cc11?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Eid_al-Fitr",
+      "hi": "ईद-उल-फ़ित्र"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1596791223961-d70c4cc6cc11?w=800&auto=format&fit=crop",
+    "wikiTitle": "Eid_al-Fitr",
+    "youtubeVideoId": "qYp1cWq4bTo",
+    "story": {
+      "origin": "Eid al-Fitr, the 'Festival of Breaking the Fast', marks the end of Ramadan, the Islamic holy month of dawn-to-sunset fasting. It was originated by the Islamic prophet Muhammad.",
+      "significance": "It is a day of immense gratitude to Allah for the strength and patience given during the fasting month, focusing on charity and community.",
+      "deity": [
+        "Allah",
+        "Prophet Muhammad"
+      ],
+      "scriptures": [
+        "Quran"
+      ]
+    },
+    "celebration": {
+      "duration": "1 to 3 days",
+      "rituals": [
+        "Performing the special Eid prayer (Salat al-Eid) in congregation.",
+        "Giving Zakat al-Fitr (charity) before the prayer.",
+        "Wearing new clothes and applying attar (perfume).",
+        "Visiting relatives, friends, and neighbors to exchange greetings."
+      ],
+      "days": [
+        {
+          "day": "Chaand Raat",
+          "activity": "Sighting the new moon and preparing for Eid by applying henna."
+        },
+        {
+          "day": "Eid Day",
+          "activity": "Morning prayers followed by a grand feast and family gatherings."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Delhi",
+          "custom": "Massive congregation at the Jama Masjid followed by a feast in Old Delhi."
+        },
+        {
+          "state": "Hyderabad",
+          "custom": "Preparation and sharing of the famous Haleem and Biryani."
+        },
+        {
+          "state": "Kashmir",
+          "custom": "Bustling markets and special prayers at the Hazratbal Shrine."
+        }
+      ],
+      "specialFood": [
+        "Sheer Khurma",
+        "Biryani",
+        "Seviyan",
+        "Kebabs",
+        "Haleem"
+      ],
+      "decorations": [
+        "Crescent and Star motifs",
+        "Fairy lights",
+        "Lanterns"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Eid Mubarak"
+        },
+        {
+          "language": "hi",
+          "text": "ईद मुबारक"
+        },
+        {
+          "language": "ur",
+          "text": "عید مبارک"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "christmas",
+    "name": "Christmas",
+    "region": "Pan-India",
+    "month": "December",
+    "type": "festival",
+    "lat": 15.2993,
+    "lng": 74.124,
+    "image": "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Christmas",
+      "hi": "क्रिसमस"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&auto=format&fit=crop",
+    "wikiTitle": "Christmas",
+    "youtubeVideoId": "VzB_oJ-x418",
+    "story": {
+      "origin": "Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration.",
+      "significance": "It symbolizes hope, joy, and peace on earth, emphasizing themes of giving, compassion, and family togetherness.",
+      "deity": [
+        "Jesus Christ"
+      ],
+      "scriptures": [
+        "The Holy Bible"
+      ]
+    },
+    "celebration": {
+      "duration": "1 day (with season lasting weeks)",
+      "rituals": [
+        "Attending Midnight Mass in churches.",
+        "Decorating the Christmas tree and house.",
+        "Exchanging gifts brought by 'Santa Claus'.",
+        "Singing Christmas carols."
+      ],
+      "days": [
+        {
+          "day": "Christmas Eve",
+          "activity": "Midnight Mass and final preparations for the feast."
+        },
+        {
+          "day": "Christmas Day",
+          "activity": "Opening gifts and enjoying a grand family dinner."
+        }
+      ],
+      "stateWiseCelebrations": [
+        {
+          "state": "Goa",
+          "custom": "Vibrant beach parties, beautifully decorated churches, and fruit cakes."
+        },
+        {
+          "state": "Kerala",
+          "custom": "Traditional Syrian Christian feasts and hanging star lanterns."
+        },
+        {
+          "state": "Meghalaya",
+          "custom": "Grand musical concerts and elaborate community feasts in Shillong."
+        }
+      ],
+      "specialFood": [
+        "Plum Cake",
+        "Roast Chicken",
+        "Rose Cookies",
+        "Kulkuls",
+        "Wine"
+      ],
+      "decorations": [
+        "Christmas Tree",
+        "Stars",
+        "Bells",
+        "Stockings",
+        "Mistletoe"
+      ],
+      "greetings": [
+        {
+          "language": "en",
+          "text": "Merry Christmas"
+        },
+        {
+          "language": "hi",
+          "text": "मेरी क्रिसमस"
+        },
+        {
+          "language": "ml",
+          "text": "മെറി ക്രിസ്മസ്"
+        },
+        {
+          "language": "kok",
+          "text": "ख्रिस्त जन्माची परबीं"
+        }
+      ]
+    }
+  }
+]

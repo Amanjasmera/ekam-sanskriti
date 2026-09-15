@@ -1,0 +1,330 @@
+{
+  "hinduism": [
+    {
+      "id": "rigveda",
+      "name": "Rigveda",
+      "nameNative": "ऋग्वेद",
+      "religion": "Hinduism",
+      "period": "1500-1000 BCE",
+      "language": "Vedic Sanskrit",
+      "wikipediaTitle": "Rigveda",
+      "summary": "The Rigveda is the oldest of the four Vedas and one of the oldest extant texts in any Indo-European language. It is a collection of 1,028 hymns (suktas) organized into 10 mandalas. The hymns are primarily dedicated to various Vedic deities and describe cosmic order, creation, and ritual sacrifices. It provides invaluable insights into early Indo-Aryan society, their philosophical reflections, and their spiritual quest.",
+      "keyTeachings": [
+        "Praise of deities like Agni, Indra, and Varuna",
+        "Concept of Rita (cosmic order and truth)",
+        "The revered Gayatri Mantra (Mandala 3.62.10)",
+        "Nasadiya Sukta — the profound creation hymn (Mandala 10.129)",
+        "Hymn to Usha (the dawn) symbolizing hope and renewal",
+        "Emphasis on truth, duty, and universal harmony"
+      ]
+    },
+    {
+      "id": "samaveda",
+      "name": "Samaveda",
+      "nameNative": "सामवेद",
+      "religion": "Hinduism",
+      "period": "1200-1000 BCE",
+      "language": "Vedic Sanskrit",
+      "wikipediaTitle": "Samaveda",
+      "summary": "The Samaveda is the Veda of melodies and chants. It is closely connected to the Rigveda, as most of its verses are derived from it but set to musical meter. It served as a hymnal for priests participating in the Soma rituals. The Samaveda laid India classical music and dance foundation, emphasizing devotion and the aesthetic experience of the divine.",
+      "keyTeachings": [
+        "The spiritual power of music and chanting",
+        "Melodic recitation as a path to divine communion",
+        "Foundational texts for Indian classical music (Gandharva Veda)",
+        "Devotion (Bhakti) expressed through musical worship",
+        "The importance of the Udgatar (chanting priest) in rituals"
+      ]
+    },
+    {
+      "id": "yajurveda",
+      "name": "Yajurveda",
+      "nameNative": "यजुर्वेद",
+      "religion": "Hinduism",
+      "period": "1200-1000 BCE",
+      "language": "Vedic Sanskrit",
+      "wikipediaTitle": "Yajurveda",
+      "summary": "The Yajurveda is the Veda of prose mantras and ritual instructions. It is divided into two primary groups: the 'Black' (Krishna) Yajurveda, which mixes verses with prose explanations, and the 'White' (Shukla) Yajurveda, which separates them. It served as a practical guidebook for priests performing elaborate Vedic sacrifices (Yajnas), detailing the formulas and actions required.",
+      "keyTeachings": [
+        "Detailed instructions for performing Vedic rituals (Yajnas)",
+        "The significance of intent and precision in worship",
+        "Integration of spiritual philosophy with ritualistic action",
+        "The concept of sacrifice as a means to uphold cosmic order",
+        "Contains the Isha Upanishad, highlighting spiritual wisdom"
+      ]
+    },
+    {
+      "id": "atharvaveda",
+      "name": "Atharvaveda",
+      "nameNative": "अथर्ववेद",
+      "religion": "Hinduism",
+      "period": "1000-900 BCE",
+      "language": "Vedic Sanskrit",
+      "wikipediaTitle": "Atharvaveda",
+      "summary": "The Atharvaveda is known as the Veda of magical formulas and everyday life. Unlike the other three Vedas which focus on public rituals, the Atharvaveda addresses the practical concerns of ordinary people, including healing, marriage, and protection from harm. It provides a unique window into the daily life, beliefs, and early medical practices of ancient India.",
+      "keyTeachings": [
+        "Early concepts of Ayurveda and medicinal herbs",
+        "Hymns for healing, long life, and prosperity",
+        "Charms and spells for protection against diseases and misfortune",
+        "Prayers for domestic harmony, marriage, and agriculture",
+        "Philosophical hymns exploring the nature of time and existence"
+      ]
+    },
+    {
+      "id": "bhagavad-gita",
+      "name": "Bhagavad Gita",
+      "nameNative": "भगवद्गीता",
+      "religion": "Hinduism",
+      "period": "400 BCE - 200 CE",
+      "language": "Sanskrit",
+      "wikipediaTitle": "Bhagavad_Gita",
+      "summary": "The Bhagavad Gita is a 700-verse Hindu scripture that is part of the epic Mahabharata. It takes the form of a dialogue between Prince Arjuna and his guide and charioteer, Krishna, on the battlefield of Kurukshetra. Facing a moral dilemma, Arjuna seeks Krishna's counsel. The Gita provides profound philosophical insights on duty, righteousness, and the paths to spiritual liberation.",
+      "keyTeachings": [
+        "Dharma (Righteous Duty): Acting according to one's responsibilities without attachment.",
+        "Karma Yoga: The path of selfless action without expectation of reward.",
+        "Bhakti Yoga: The path of devotion and surrender to the divine.",
+        "Jnana Yoga: The path of knowledge and realizing the eternal self (Atman).",
+        "The immortality of the soul and the illusion of the physical body.",
+        "The concept of Nishkama Karma (desireless action)."
+      ]
+    },
+    {
+      "id": "ramayana",
+      "name": "Ramayana",
+      "nameNative": "रामायण",
+      "religion": "Hinduism",
+      "period": "500 BCE - 100 BCE",
+      "language": "Sanskrit",
+      "wikipediaTitle": "Ramayana",
+      "summary": "The Ramayana is an ancient Indian epic traditionally ascribed to the sage Valmiki. It narrates the life of Rama, a legendary prince of Ayodhya, his exile to the forest, the abduction of his wife Sita by the demon king Ravana, and the subsequent war to rescue her. It is a profound exploration of human values, duties, relationships, and the triumph of good over evil.",
+      "keyTeachings": [
+        "The ideal of Maryada Purushottama (the perfect man) through Lord Rama",
+        "The importance of Dharma, duty, and keeping one's promises",
+        "Devotion and loyalty, exemplified by Hanuman and Sita",
+        "The consequences of ego and unrighteousness (Adharma)",
+        "The sacred bond of family and brotherhood (Rama and Lakshmana)"
+      ]
+    },
+    {
+      "id": "mahabharata",
+      "name": "Mahabharata",
+      "nameNative": "महाभारत",
+      "religion": "Hinduism",
+      "period": "400 BCE - 400 CE",
+      "language": "Sanskrit",
+      "wikipediaTitle": "Mahabharata",
+      "summary": "The Mahabharata is the longest epic poem known and has been described as the 'longest poem ever written'. It revolves around the Kurukshetra War and the fates of the Kaurava and the Pandava princes. Beyond the central narrative, it contains vast philosophical and devotional material, acting as an encyclopedia of ancient Indian history, culture, and ethics.",
+      "keyTeachings": [
+        "The complex nature of Dharma in difficult situations",
+        "The inevitable conflict between right and wrong",
+        "The supreme importance of truth and justice",
+        "Contains the Bhagavad Gita, summarizing Vedic philosophy",
+        "Explores the concepts of Karma (action) and Destiny"
+      ]
+    },
+    {
+      "id": "upanishads",
+      "name": "Upanishads",
+      "nameNative": "उपनिषद्",
+      "religion": "Hinduism",
+      "period": "800 - 200 BCE",
+      "language": "Sanskrit",
+      "wikipediaTitle": "Upanishads",
+      "summary": "The Upanishads are late Vedic Sanskrit texts that supply the basis of later Hindu philosophy. They are the most recent part of the Vedas, often referred to as Vedanta. The texts explore profound metaphysical questions about the nature of reality (Brahman) and the individual soul (Atman), shifting the focus from external rituals to internal spiritual realization.",
+      "keyTeachings": [
+        "The core concept of Brahman (the ultimate, unchanging reality)",
+        "The realization of Atman (the inner self or soul)",
+        "Tat Tvam Asi ('Thou art that') — the unity of Atman and Brahman",
+        "The concept of Karma and Samsara (the cycle of rebirth)",
+        "Moksha (liberation) as the ultimate goal of human life"
+      ]
+    }
+  ],
+  "islam": [
+    {
+      "id": "quran",
+      "name": "Quran",
+      "nameNative": "القرآن",
+      "religion": "Islam",
+      "period": "610-632 CE",
+      "language": "Classical Arabic",
+      "wikipediaTitle": "Quran",
+      "summary": "The Quran is the central religious text of Islam, believed by Muslims to be a revelation from God (Allah). It is widely regarded as the finest work in classical Arabic literature. The text is divided into 114 chapters (surahs) and addresses themes of monotheism, prophecy, morality, and eschatology, offering guidance for all aspects of human life.",
+      "keyTeachings": [
+        "Tawhid: The absolute oneness and uniqueness of God",
+        "The importance of prayer (Salah) and charity (Zakat)",
+        "Justice, compassion, and moral responsibility",
+        "The finality of Prophethood with Muhammad (PBUH)",
+        "The concepts of the Day of Judgment and the Afterlife"
+      ]
+    },
+    {
+      "id": "hadith",
+      "name": "Hadith",
+      "nameNative": "الحديث",
+      "religion": "Islam",
+      "period": "8th - 9th century CE",
+      "language": "Classical Arabic",
+      "wikipediaTitle": "Hadith",
+      "summary": "The Hadith are the collected traditions containing sayings of the prophet Muhammad which, with accounts of his daily practice (the Sunnah), constitute the major source of guidance for Muslims apart from the Quran. These collections provide context for Quranic verses, legal rulings, and ethical guidelines for daily life.",
+      "keyTeachings": [
+        "Practical application of Quranic principles in daily life",
+        "Emphasis on good character (Akhlaq), honesty, and kindness",
+        "Guidelines on worship, family relations, and social justice",
+        "The importance of intention (Niyyah) in all actions",
+        "Respect for neighbors, elders, and the environment"
+      ]
+    }
+  ],
+  "christianity": [
+    {
+      "id": "bible",
+      "name": "The Bible",
+      "nameNative": "The Bible",
+      "religion": "Christianity",
+      "period": "1200 BCE - 100 CE",
+      "language": "Hebrew, Aramaic, Greek",
+      "wikipediaTitle": "Bible",
+      "summary": "The Bible is a collection of religious texts or scriptures sacred in Christianity, Judaism, Samaritanism, and many other religions. The Christian Bible is divided into two main parts: the Old Testament (based on the Hebrew Bible) and the New Testament, which details the life and teachings of Jesus Christ and the early Christian church.",
+      "keyTeachings": [
+        "Monotheism: Belief in one God as Creator and Sustainer",
+        "The life, teachings, crucifixion, and resurrection of Jesus Christ",
+        "The concept of Grace and Salvation through faith",
+        "Love for God and love for one's neighbor (The Great Commandment)",
+        "Forgiveness, humility, and the pursuit of justice"
+      ]
+    }
+  ],
+  "sikhism": [
+    {
+      "id": "guru-granth-sahib",
+      "name": "Guru Granth Sahib",
+      "nameNative": "ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ",
+      "religion": "Sikhism",
+      "period": "1604 CE",
+      "language": "Gurmukhi",
+      "wikipediaTitle": "Guru_Granth_Sahib",
+      "summary": "The Guru Granth Sahib is the central holy religious scripture of Sikhism, regarded by Sikhs as the final, sovereign, and eternal Guru following the lineage of the ten human gurus. Compiled by Guru Arjan Dev in 1604, it uniquely includes hymns and teachings not only from Sikh Gurus but also from Hindu and Muslim saints (Bhagats).",
+      "keyTeachings": [
+        "Ik Onkar: There is only one God, formless and eternal",
+        "Vand Chhako: Sharing with others and helping those in need",
+        "Kirat Karo: Earning an honest living",
+        "Naam Japo: Meditating on God's name to control the five evils",
+        "Equality of all humankind, regardless of caste, creed, or gender"
+      ]
+    }
+  ],
+  "buddhism": [
+    {
+      "id": "tripitaka",
+      "name": "Tripitaka",
+      "nameNative": "Tipiṭaka",
+      "religion": "Buddhism",
+      "period": "3rd century BCE",
+      "language": "Pali",
+      "wikipediaTitle": "Tripiṭaka",
+      "summary": "The Tripitaka (Pali Canon) is the traditional term for the Buddhist scriptures. It translates to 'Three Baskets', referring to its three divisions: Vinaya Pitaka (rules for monastic discipline), Sutta Pitaka (discourses of the Buddha), and Abhidhamma Pitaka (philosophical and psychological analysis). It forms the doctrinal foundation of Theravada Buddhism.",
+      "keyTeachings": [
+        "The Four Noble Truths regarding suffering and its cessation",
+        "The Noble Eightfold Path as the way to enlightenment",
+        "Anicca (Impermanence) and Anatta (Non-self)",
+        "Karma and the cycle of rebirth (Samsara)",
+        "The pursuit of Nirvana (liberation from suffering)"
+      ]
+    }
+  ],
+  "jainism": [
+    {
+      "id": "agamas",
+      "name": "Agamas",
+      "nameNative": "Siddhanta",
+      "religion": "Jainism",
+      "period": "5th century BCE onward",
+      "language": "Prakrit, Sanskrit",
+      "wikipediaTitle": "Jain_Agamas",
+      "summary": "The Jain Agamas are the original texts of Jainism based on the discourses of the Tirthankaras, primarily Lord Mahavira. They contain profound spiritual teachings, philosophical discourse on the nature of the soul and universe, and rigorous ethical codes aimed at spiritual purification and liberation from the cycle of birth and death.",
+      "keyTeachings": [
+        "Ahimsa (Non-violence): The supreme principle applied to all living beings",
+        "Anekantavada (Many-sidedness): The multifaceted nature of truth and reality",
+        "Aparigraha (Non-attachment): Minimizing possessions and desires",
+        "The concept of Karma as physical matter binding the soul",
+        "Rigorous asceticism and self-control to achieve Moksha (liberation)"
+      ]
+    }
+  ],
+  "zoroastrianism": [
+    {
+      "id": "avesta",
+      "name": "Avesta",
+      "nameNative": "Avesta",
+      "religion": "Zoroastrianism",
+      "period": "1500-500 BCE",
+      "language": "Avestan",
+      "wikipediaTitle": "Avesta",
+      "summary": "The Avesta is the primary collection of religious texts of Zoroastrianism, composed in the ancient Avestan language. It includes the Gathas, which are hymns believed to have been composed by the prophet Zoroaster himself. The texts encompass cosmology, law, liturgy, and the central cosmic struggle between truth and falsehood.",
+      "keyTeachings": [
+        "Belief in Ahura Mazda, the supreme Creator",
+        "The cosmic struggle between Asha (Truth/Order) and Druj (Falsehood/Chaos)",
+        "Humata, Hukhta, Hvarshta: Good Thoughts, Good Words, Good Deeds",
+        "The importance of purity, especially concerning fire and water",
+        "Human free will and responsibility in choosing the path of righteousness"
+      ]
+    }
+  ],
+  "judaism": [
+    {
+      "id": "torah",
+      "name": "Torah",
+      "nameNative": "תּוֹרָה",
+      "religion": "Judaism",
+      "period": "~1300 BCE",
+      "language": "Biblical Hebrew",
+      "wikipediaTitle": "Torah",
+      "summary": "The Torah consists of the first five books of the Hebrew Bible (Genesis, Exodus, Leviticus, Numbers, and Deuteronomy). It is the central and most important document of Judaism, containing the laws, teachings, and the foundational narrative of the Jewish people, from the creation of the world to the death of Moses.",
+      "keyTeachings": [
+        "Strict monotheism: Belief in one, indivisible God",
+        "The Covenant between God and the Jewish people",
+        "The giving of the Law (Mitzvot) at Mount Sinai",
+        "Importance of justice, charity (Tzedakah), and ethical living",
+        "Observance of the Sabbath (Shabbat) and holy days"
+      ]
+    }
+  ],
+  "bahai": [
+    {
+      "id": "kitab-i-aqdas",
+      "name": "Kitáb-i-Aqdas",
+      "nameNative": "الكتاب الأقدس",
+      "religion": "Bahá'í Faith",
+      "period": "1873 CE",
+      "language": "Arabic",
+      "wikipediaTitle": "Kitáb-i-Aqdas",
+      "summary": "The Kitáb-i-Aqdas is the central book of the Bahá'í Faith, written by its founder, Bahá'u'lláh. It is sometimes referred to as the 'Most Holy Book'. It contains laws, ethical principles, and administrative guidelines for Bahá'ís, emphasizing the unity of God, religion, and humanity as the foundation for a global society.",
+      "keyTeachings": [
+        "The Oneness of God and the fundamental unity of all major world religions",
+        "The Oneness of Humanity and the elimination of all forms of prejudice",
+        "The independent investigation of truth",
+        "The harmony of science and religion",
+        "The establishment of universal peace and a global commonwealth"
+      ]
+    }
+  ],
+  "tribal": [
+    {
+      "id": "oral-traditions",
+      "name": "Oral Traditions",
+      "nameNative": "Folklore",
+      "religion": "Tribal Beliefs",
+      "period": "Prehistoric to present",
+      "language": "Various indigenous languages",
+      "wikipediaTitle": "Oral_tradition",
+      "summary": "Tribal and indigenous belief systems in India rely heavily on oral traditions rather than written scriptures. These rich traditions are passed down through generations via storytelling, songs, chants, and rituals. They preserve the history, cosmology, ecological wisdom, and ethical values of the communities, maintaining a profound connection to nature and ancestral spirits.",
+      "keyTeachings": [
+        "Deep reverence for nature, forests, rivers, and mountains as sacred",
+        "Animism: The belief that natural objects and phenomena possess a spiritual essence",
+        "Veneration of ancestors and community elders",
+        "Strong emphasis on community cohesion and collective well-being",
+        "Sustainable living and harmonious coexistence with the environment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "slug": "taj-mahal",
+    "name": "Taj Mahal",
+    "state": "Uttar Pradesh",
+    "era": "Mughal (1632)",
+    "lat": 27.1751,
+    "lng": 78.0421,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Taj_Mahal",
+      "hi": "ताज_महल"
+    },
+    "wikipediaTitle": "Taj_Mahal",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "1632–1653 CE",
+      "dynasty": "Mughal Empire",
+      "architect": "Ustad Ahmad Lahauri",
+      "unesco": true,
+      "openingHours": "6:00 AM – 6:30 PM (Closed Fridays)",
+      "ticketPrice": "₹50 (Indian) / ₹1,100 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "qutub-minar",
+    "name": "Qutub Minar",
+    "state": "Delhi",
+    "era": "Delhi Sultanate (1192)",
+    "lat": 28.5245,
+    "lng": 77.1855,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/3840px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Qutb_Minar",
+      "hi": "कुतुब_मीनार"
+    },
+    "wikipediaTitle": "Qutb_Minar",
+    "youtubeVideoId": "d281L3V7MGE",
+    "quickFacts": {
+      "builtYear": "1192–1220 CE",
+      "dynasty": "Delhi Sultanate",
+      "architect": "Qutb al-Din Aibak & Iltutmish",
+      "unesco": true,
+      "openingHours": "7:00 AM – 5:00 PM",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/3840px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "red-fort",
+    "name": "Red Fort",
+    "state": "Delhi",
+    "era": "Mughal (1648)",
+    "lat": 28.6562,
+    "lng": 77.241,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/3840px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Red_Fort",
+      "hi": "लाल_क़िला"
+    },
+    "wikipediaTitle": "Red_Fort",
+    "youtubeVideoId": "41i_e5b-Q3M",
+    "quickFacts": {
+      "builtYear": "1638–1648 CE",
+      "dynasty": "Mughal Empire",
+      "architect": "Ustad Ahmad Lahauri",
+      "unesco": true,
+      "openingHours": "9:30 AM – 4:30 PM (Closed Mondays)",
+      "ticketPrice": "₹50 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/3840px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "hawa-mahal",
+    "name": "Hawa Mahal",
+    "state": "Rajasthan",
+    "era": "Rajput (1799)",
+    "lat": 26.9239,
+    "lng": 75.8267,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Hawa_Mahal",
+      "hi": "हवा_महल"
+    },
+    "wikipediaTitle": "Hawa_Mahal",
+    "youtubeVideoId": "pGv_hF7Hn9g",
+    "quickFacts": {
+      "builtYear": "1799 CE",
+      "dynasty": "Kachwaha Rajput",
+      "architect": "Lal Chand Ustad",
+      "unesco": true,
+      "openingHours": "9:00 AM – 5:00 PM",
+      "ticketPrice": "₹50 (Indian) / ₹200 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "konark-sun-temple",
+    "name": "Konark Sun Temple",
+    "state": "Odisha",
+    "era": "Ganga Dynasty (1250)",
+    "lat": 19.8876,
+    "lng": 86.0945,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Konark_Sun_Temple",
+      "hi": "कोणार्क_सूर्य_मंदिर"
+    },
+    "wikipediaTitle": "Konark_Sun_Temple",
+    "youtubeVideoId": "sR0tq25qJkE",
+    "quickFacts": {
+      "builtYear": "1250 CE",
+      "dynasty": "Eastern Ganga Dynasty",
+      "architect": "Bisu Maharana",
+      "unesco": true,
+      "openingHours": "6:00 AM – 8:00 PM",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "meenakshi-amman-temple",
+    "name": "Meenakshi Amman Temple",
+    "state": "Tamil Nadu",
+    "era": "Pandyan / Nayak (1190)",
+    "lat": 9.9195,
+    "lng": 78.1193,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/3840px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Meenakshi_Temple",
+      "hi": "मीनाक्षी_अम्मन_मंदिर"
+    },
+    "wikipediaTitle": "Meenakshi_Temple",
+    "youtubeVideoId": "8ZgS1aR2_yM",
+    "quickFacts": {
+      "builtYear": "1190–1650 CE",
+      "dynasty": "Pandyan & Nayak Dynasties",
+      "architect": "Vishwanatha Nayakar",
+      "unesco": false,
+      "openingHours": "5:00 AM – 12:30 PM, 4:00 PM – 10:00 PM",
+      "ticketPrice": "Free Entry (₹50 Special Darshan)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/3840px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "golden-temple",
+    "name": "Golden Temple",
+    "state": "Punjab",
+    "era": "Sikh Heritage (1577)",
+    "lat": 31.62,
+    "lng": 74.8765,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Golden_Temple",
+      "hi": "हरिमंदिर_साहिब"
+    },
+    "wikipediaTitle": "Golden_Temple",
+    "youtubeVideoId": "60wJtZ6y14g",
+    "quickFacts": {
+      "builtYear": "1577–1604 CE",
+      "dynasty": "Sikh Empire / Guru Ram Das",
+      "architect": "Guru Arjan Dev Ji",
+      "unesco": false,
+      "openingHours": "Open 24 Hours",
+      "ticketPrice": "Free Entry"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "ajanta-caves",
+    "name": "Ajanta Caves",
+    "state": "Maharashtra",
+    "era": "Satavahana (2nd BCE)",
+    "lat": 20.5519,
+    "lng": 75.7033,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Ajanta_Caves",
+      "hi": "अजंता_की_गुफाएं"
+    },
+    "wikipediaTitle": "Ajanta_Caves",
+    "youtubeVideoId": "gG9jU22lG6A",
+    "quickFacts": {
+      "builtYear": "2nd BCE – 480 CE",
+      "dynasty": "Satavahana & Vakataka Dynasties",
+      "architect": "Buddhist Monks & Guild Artisans",
+      "unesco": true,
+      "openingHours": "9:00 AM – 5:00 PM (Closed Mondays)",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "ellora-caves",
+    "name": "Ellora Caves & Kailasa Temple",
+    "state": "Maharashtra",
+    "era": "Rashtrakuta (600 CE)",
+    "lat": 20.0268,
+    "lng": 75.1771,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ellora_Caves_-Aurangabad_-Maharastra_-DSC001.jpg/1280px-Ellora_Caves_-Aurangabad_-Maharastra_-DSC001.jpg",
+    "wikipedia_titles": {
+      "en": "Ellora_Caves",
+      "hi": "एलोरा_की_गुफाएं"
+    },
+    "wikipediaTitle": "Ellora_Caves",
+    "youtubeVideoId": "n4C_9Q4RzC8",
+    "quickFacts": {
+      "builtYear": "600–1000 CE",
+      "dynasty": "Rashtrakuta & Yadava Dynasties",
+      "architect": "King Krishna I",
+      "unesco": true,
+      "openingHours": "6:00 AM – 6:00 PM (Closed Tuesdays)",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ellora_Caves_-Aurangabad_-Maharastra_-DSC001.jpg/1280px-Ellora_Caves_-Aurangabad_-Maharastra_-DSC001.jpg"
+  },
+  {
+    "slug": "khajuraho-monuments",
+    "name": "Khajuraho Group of Monuments",
+    "state": "Madhya Pradesh",
+    "era": "Chandela Dynasty (950 CE)",
+    "lat": 24.8318,
+    "lng": 79.9199,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Khajuraho_Group_of_Monuments",
+      "hi": "खजुराहो_स्मारक_समूह"
+    },
+    "wikipediaTitle": "Khajuraho_Group_of_Monuments",
+    "youtubeVideoId": "8b7j3w_Q3K8",
+    "quickFacts": {
+      "builtYear": "950–1050 CE",
+      "dynasty": "Chandela Rajput Dynasty",
+      "architect": "Chandela Royal Architects",
+      "unesco": true,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "sanchi-stupa",
+    "name": "Sanchi Great Stupa",
+    "state": "Madhya Pradesh",
+    "era": "Mauryan Era (3rd BCE)",
+    "lat": 23.4793,
+    "lng": 77.7397,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Sanchi",
+      "hi": "सांची_का_स्तूप"
+    },
+    "wikipediaTitle": "Sanchi",
+    "youtubeVideoId": "gY3cK4tM8nE",
+    "quickFacts": {
+      "builtYear": "3rd Century BCE",
+      "dynasty": "Mauryan Empire (Emperor Ashoka)",
+      "architect": "Mauryan Royal Builders",
+      "unesco": true,
+      "openingHours": "8:30 AM – 5:30 PM",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "charminar",
+    "name": "Charminar",
+    "state": "Telangana",
+    "era": "Qutb Shahi (1591)",
+    "lat": 17.3616,
+    "lng": 78.4747,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/1280px-Charminar_Hyderabad_1.jpg",
+    "wikipedia_titles": {
+      "en": "Charminar",
+      "hi": "चारमीनार"
+    },
+    "wikipediaTitle": "Charminar",
+    "youtubeVideoId": "cZ4gK2N7R6E",
+    "quickFacts": {
+      "builtYear": "1591 CE",
+      "dynasty": "Qutb Shahi Dynasty",
+      "architect": "Mir Momin Astarabadi",
+      "unesco": false,
+      "openingHours": "9:30 AM – 5:30 PM",
+      "ticketPrice": "₹25 (Indian) / ₹300 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/1280px-Charminar_Hyderabad_1.jpg"
+  },
+  {
+    "slug": "gateway-of-india",
+    "name": "Gateway of India",
+    "state": "Maharashtra",
+    "era": "British Colonial (1924)",
+    "lat": 18.922,
+    "lng": 72.8347,
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Gateway_of_India",
+      "hi": "गेटवे_ऑफ़_इण्डिया"
+    },
+    "wikipediaTitle": "Gateway_of_India",
+    "youtubeVideoId": "J6c-2lZ7ZkE",
+    "quickFacts": {
+      "builtYear": "1911–1924 CE",
+      "dynasty": "British Raj",
+      "architect": "George Wittet",
+      "unesco": false,
+      "openingHours": "Open 24 Hours",
+      "ticketPrice": "Free Entry"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "mysore-palace",
+    "name": "Mysore Palace",
+    "state": "Karnataka",
+    "era": "Wodeyar Dynasty (1912)",
+    "lat": 12.3052,
+    "lng": 76.6552,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/3840px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Mysore_Palace",
+      "hi": "मैसूर_महल"
+    },
+    "wikipediaTitle": "Mysore_Palace",
+    "youtubeVideoId": "5qYk-9G8aF0",
+    "quickFacts": {
+      "builtYear": "1897–1912 CE",
+      "dynasty": "Wodeyar Dynasty",
+      "architect": "Henry Irwin",
+      "unesco": false,
+      "openingHours": "10:00 AM – 5:30 PM",
+      "ticketPrice": "₹100 (Indian) / ₹300 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/3840px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "victoria-memorial",
+    "name": "Victoria Memorial",
+    "state": "West Bengal",
+    "era": "British Era (1921)",
+    "lat": 22.5448,
+    "lng": 88.3426,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/3840px-Victoria_Memorial_situated_in_Kolkata.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Victoria_Memorial,_Kolkata",
+      "hi": "विक्टोरिया_मेमोरियल"
+    },
+    "wikipediaTitle": "Victoria_Memorial,_Kolkata",
+    "youtubeVideoId": "m9kK3j7Wz4E",
+    "quickFacts": {
+      "builtYear": "1906–1921 CE",
+      "dynasty": "British Raj",
+      "architect": "Sir William Emerson",
+      "unesco": false,
+      "openingHours": "10:00 AM – 5:00 PM (Closed Mondays)",
+      "ticketPrice": "₹30 (Indian) / ₹500 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/3840px-Victoria_Memorial_situated_in_Kolkata.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "amer-fort",
+    "name": "Amer Fort",
+    "state": "Rajasthan",
+    "era": "Rajput (1592)",
+    "lat": 26.9855,
+    "lng": 75.8513,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/3840px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Amer_Fort",
+      "hi": "आमेर_दुर्ग"
+    },
+    "wikipediaTitle": "Amer_Fort",
+    "youtubeVideoId": "kL5w2N8Y3mE",
+    "quickFacts": {
+      "builtYear": "1592 CE",
+      "dynasty": "Kachwaha Rajput",
+      "architect": "Raja Man Singh I",
+      "unesco": true,
+      "openingHours": "8:00 AM – 5:30 PM, 6:30 PM – 9:15 PM",
+      "ticketPrice": "₹100 (Indian) / ₹550 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/3840px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "brihadisvara-temple",
+    "name": "Brihadisvara Temple",
+    "state": "Tamil Nadu",
+    "era": "Chola Dynasty (1010 CE)",
+    "lat": 10.7828,
+    "lng": 79.1318,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/3840px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Brihadisvara_Temple,_Thanjavur",
+      "hi": "बृहदेश्वर_मंदिर"
+    },
+    "wikipediaTitle": "Brihadisvara_Temple,_Thanjavur",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "Chola Dynasty (1010 CE)",
+      "dynasty": "Indian Heritage",
+      "architect": "Royal Guild Artisans",
+      "unesco": false,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "Standard Ticket Applies"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/3840px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "hampi-group-of-monuments",
+    "name": "Hampi Stone Chariot",
+    "state": "Karnataka",
+    "era": "Vijayanagara Empire (1336)",
+    "lat": 15.335,
+    "lng": 76.46,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg/3840px-Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Hampi",
+      "hi": "हम्पी"
+    },
+    "wikipediaTitle": "Hampi",
+    "youtubeVideoId": "b8W2N4K9mLE",
+    "quickFacts": {
+      "builtYear": "14th–16th Century CE",
+      "dynasty": "Vijayanagara Empire",
+      "architect": "Hakka & Bukka / Royal Guilds",
+      "unesco": true,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "₹40 (Indian) / ₹600 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg/3840px-Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "fatehpur-sikri",
+    "name": "Fatehpur Sikri & Buland Darwaza",
+    "state": "Uttar Pradesh",
+    "era": "Mughal Empire (1571)",
+    "lat": 27.0945,
+    "lng": 77.6679,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Fatehpur_Sikri",
+      "hi": "फ़तेहपुर_सीकरी"
+    },
+    "wikipediaTitle": "Fatehpur_Sikri",
+    "youtubeVideoId": "m2W3y4K8nLE",
+    "quickFacts": {
+      "builtYear": "1571–1585 CE",
+      "dynasty": "Mughal Empire",
+      "architect": "Emperor Akbar",
+      "unesco": true,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "₹50 (Indian) / ₹610 (Foreigner)"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "nalanda",
+    "name": "Nalanda Ancient Ruins",
+    "state": "Bihar",
+    "era": "Gupta Empire (5th CE)",
+    "lat": 25.1357,
+    "lng": 85.4439,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Nalanda",
+      "hi": "नालंदा"
+    },
+    "wikipediaTitle": "Nalanda",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "Gupta Empire (5th CE)",
+      "dynasty": "Indian Heritage",
+      "architect": "Royal Guild Artisans",
+      "unesco": false,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "Standard Ticket Applies"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "somnath-temple",
+    "name": "Somnath Temple",
+    "state": "Gujarat",
+    "era": "Chalukya Architecture",
+    "lat": 20.888,
+    "lng": 70.4012,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/3840px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Somnath_temple",
+      "hi": "सोमनाथ_मंदिर"
+    },
+    "wikipediaTitle": "Somnath_temple",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "Chalukya Architecture",
+      "dynasty": "Indian Heritage",
+      "architect": "Royal Guild Artisans",
+      "unesco": false,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "Standard Ticket Applies"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/3840px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "sun-temple-modhera",
+    "name": "Modhera Sun Temple",
+    "state": "Gujarat",
+    "era": "Solanki Dynasty (1026 CE)",
+    "lat": 23.5835,
+    "lng": 72.1331,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/3840px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Sun_Temple,_Modhera",
+      "hi": "मोढेरा_सूर्य_मंदिर"
+    },
+    "wikipediaTitle": "Sun_Temple,_Modhera",
+    "youtubeVideoId": "d4K7m3N9yLE",
+    "quickFacts": {
+      "builtYear": "1026–1027 CE",
+      "dynasty": "Solanki Dynasty",
+      "architect": "King Bhima I",
+      "unesco": false,
+      "openingHours": "7:00 AM – 6:00 PM",
+      "ticketPrice": "₹25 (Indian) / ₹300 (Foreigner)"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/3840px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "slug": "elephanta-caves",
+    "name": "Elephanta Trimurti Caves",
+    "state": "Maharashtra",
+    "era": "Silhara Dynasty (5th CE)",
+    "lat": 18.9633,
+    "lng": 72.9315,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Elephanta_Caves",
+      "hi": "एलिफेंटा_की_गुफ़ाएँ"
+    },
+    "wikipediaTitle": "Elephanta_Caves",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "Silhara Dynasty (5th CE)",
+      "dynasty": "Indian Heritage",
+      "architect": "Royal Guild Artisans",
+      "unesco": false,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "Standard Ticket Applies"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "mahabalipuram-monuments",
+    "name": "Mahabalipuram Shore Temple",
+    "state": "Tamil Nadu",
+    "era": "Pallava Dynasty (7th CE)",
+    "lat": 12.6269,
+    "lng": 80.1927,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mamallapuram_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikipedia_titles": {
+      "en": "Group_of_Monuments_at_Mahabalipuram",
+      "hi": "महाबलीपुरम_के_स्मारक"
+    },
+    "wikipediaTitle": "Group_of_Monuments_at_Mahabalipuram",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "Pallava Dynasty (7th CE)",
+      "dynasty": "Indian Heritage",
+      "architect": "Royal Guild Artisans",
+      "unesco": false,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "Standard Ticket Applies"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mamallapuram_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "slug": "jallianwala-bagh",
+    "name": "Jallianwala Bagh Memorial",
+    "state": "Punjab",
+    "era": "Modern History (1919)",
+    "lat": 31.6207,
+    "lng": 74.8801,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/3840px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_titles": {
+      "en": "Jallianwala_Bagh",
+      "hi": "जलियांवाला_बाग"
+    },
+    "wikipediaTitle": "Jallianwala_Bagh",
+    "youtubeVideoId": "EWk2mKz177Q",
+    "quickFacts": {
+      "builtYear": "Modern History (1919)",
+      "dynasty": "Indian Heritage",
+      "architect": "Royal Guild Artisans",
+      "unesco": false,
+      "openingHours": "6:00 AM – 6:00 PM",
+      "ticketPrice": "Standard Ticket Applies"
+    },
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/3840px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+]

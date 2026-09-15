@@ -1,0 +1,20 @@
+[
+  {
+    "id": "q1",
+    "question": "Which of these is a classical dance form of Kerala?",
+    "options": ["Kathak", "Bharatanatyam", "Kathakali", "Odissi"],
+    "answer": "Kathakali"
+  },
+  {
+    "id": "q2",
+    "question": "The Ajanta Caves are primarily associated with which religion?",
+    "options": ["Hinduism", "Jainism", "Buddhism", "Sikhism"],
+    "answer": "Buddhism"
+  },
+  {
+    "id": "q3",
+    "question": "Who built the Taj Mahal?",
+    "options": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
+    "answer": "Shah Jahan"
+  }
+]

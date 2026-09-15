@@ -1,0 +1,302 @@
+[
+  {
+    "id": "taj-mahal",
+    "title": "Taj Mahal",
+    "category": "monuments",
+    "district": "Agra",
+    "state": "Uttar Pradesh",
+    "subtitle": "Mughal Empire • 1632 CE",
+    "lat": 27.1751,
+    "lng": 78.0421,
+    "image": "https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Taj_Mahal",
+      "hi": "ताज_महल"
+    }
+  },
+  {
+    "id": "qutub-minar",
+    "title": "Qutub Minar",
+    "category": "monuments",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "subtitle": "Delhi Sultanate • 1192 CE",
+    "lat": 28.5245,
+    "lng": 77.1855,
+    "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Qutb_Minar",
+      "hi": "कुतुब_मीनार"
+    }
+  },
+  {
+    "id": "hawa-mahal",
+    "title": "Hawa Mahal",
+    "category": "monuments",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "subtitle": "Rajput Architecture • 1799 CE",
+    "lat": 26.9239,
+    "lng": 75.8267,
+    "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Hawa_Mahal",
+      "hi": "हवा_महल"
+    }
+  },
+  {
+    "id": "konark-sun-temple",
+    "title": "Konark Sun Temple",
+    "category": "monuments",
+    "district": "Puri",
+    "state": "Odisha",
+    "subtitle": "Kalinga Architecture • 1250 CE",
+    "lat": 19.8876,
+    "lng": 86.0945,
+    "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Konark_Sun_Temple",
+      "hi": "कोणार्क_सूर्य_मंदिर"
+    }
+  },
+  {
+    "id": "gateway-of-india",
+    "title": "Gateway of India",
+    "category": "monuments",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "subtitle": "Indo-Saracenic • 1924 CE",
+    "lat": 18.922,
+    "lng": 72.8347,
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Gateway_of_India",
+      "hi": "गेटवे_ऑफ़_इंडिया"
+    }
+  },
+  {
+    "id": "hyderabadi-biryani",
+    "title": "Hyderabadi Biryani",
+    "category": "food",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "subtitle": "Nizami Cuisine • Savory Rice",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Hyderabadi_biryani",
+      "hi": "हैदराबादी_बिरयानी"
+    }
+  },
+  {
+    "id": "masala-dosa",
+    "title": "Masala Dosa",
+    "category": "food",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "subtitle": "South Indian Specialty • Crispy Crepe",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Dosa_(food)",
+      "hi": "डोसा"
+    }
+  },
+  {
+    "id": "pani-puri",
+    "title": "Pani Puri & Chaat",
+    "category": "food",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "subtitle": "Famous Street Food • Tangy Crispy Balls",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Panipuri",
+      "hi": "पानीपूरी"
+    }
+  },
+  {
+    "id": "rasgulla",
+    "title": "Kolkata Rasgulla",
+    "category": "food",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "subtitle": "Traditional Sweet • Syrupy Cottage Cheese",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Rasgulla",
+      "hi": "रसगुल्ला"
+    }
+  },
+  {
+    "id": "amritsari-kulcha",
+    "title": "Amritsari Kulcha",
+    "category": "food",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "subtitle": "Punjabi Delicacy • Stuffed Bread",
+    "lat": 31.634,
+    "lng": 74.8723,
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Kulcha",
+      "hi": "कुलचा"
+    }
+  },
+  {
+    "id": "diwali-dev-deepawali",
+    "title": "Dev Deepawali & Diwali",
+    "category": "festivals",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "subtitle": "Festival of Lights • Ghat Illumination",
+    "lat": 25.3176,
+    "lng": 82.9739,
+    "image": "https://images.unsplash.com/photo-1605280263929-1c42c62ef169?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Dev_Deepawali_(Varanasi)",
+      "hi": "देव_दीपावली"
+    }
+  },
+  {
+    "id": "durga-puja",
+    "title": "Kolkata Durga Puja",
+    "category": "festivals",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "subtitle": "UNESCO Intangible Cultural Heritage",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "image": "https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Durga_Puja",
+      "hi": "दुर्गा_पूजा"
+    }
+  },
+  {
+    "id": "ganesh-chaturthi",
+    "title": "Ganesh Chaturthi",
+    "category": "festivals",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "subtitle": "Grand Celebration • Bappa Immersion",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "image": "https://images.unsplash.com/photo-1567684014761-b65e2e59b9eb?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Ganesh_Chaturthi",
+      "hi": "गणेश_चतुर्थी"
+    }
+  },
+  {
+    "id": "onam-boat-race",
+    "title": "Onam & Snake Boat Race",
+    "category": "festivals",
+    "district": "Alappuzha",
+    "state": "Kerala",
+    "subtitle": "Harvest Festival • Vallam Kali Boat Race",
+    "lat": 9.4981,
+    "lng": 76.3388,
+    "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Onam",
+      "hi": "ओणम"
+    }
+  },
+  {
+    "id": "pushkar-fair",
+    "title": "Pushkar Camel Fair",
+    "category": "festivals",
+    "district": "Pushkar",
+    "state": "Rajasthan",
+    "subtitle": "Cultural Livestock & Folk Fest",
+    "lat": 26.4897,
+    "lng": 74.5511,
+    "image": "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Pushkar_Fair",
+      "hi": "पुष्कर_मेला"
+    }
+  },
+  {
+    "id": "madhubani-art",
+    "title": "Madhubani Painting",
+    "category": "arts",
+    "district": "Madhubani",
+    "state": "Bihar",
+    "subtitle": "Ancient Mithila Folk Art",
+    "lat": 26.3496,
+    "lng": 86.075,
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Madhubani_art",
+      "hi": "मधुबनी_चित्रकला"
+    }
+  },
+  {
+    "id": "pashmina-weaving",
+    "title": "Pashmina Shawl Weaving",
+    "category": "arts",
+    "district": "Srinagar",
+    "state": "Jammu & Kashmir",
+    "subtitle": "Hand-spun Cashmere Artisan Weave",
+    "lat": 34.0837,
+    "lng": 74.7973,
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Pashmina",
+      "hi": "पश्मीना"
+    }
+  },
+  {
+    "id": "kanchipuram-silk",
+    "title": "Kanchipuram Silk Weaving",
+    "category": "arts",
+    "district": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "subtitle": "Royal Pure Mulberry Silk Sarees",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Kanchipuram_silk_saree",
+      "hi": "कांचीपुरम_साड़ी"
+    }
+  },
+  {
+    "id": "blue-pottery",
+    "title": "Jaipur Blue Pottery",
+    "category": "arts",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "subtitle": "Glazed Quartz Craft",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "image": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Blue_Pottery_of_Jaipur",
+      "hi": "जयपुर_की_ब्लू_पॉटरी"
+    }
+  },
+  {
+    "id": "bidriware",
+    "title": "Bidriware Metal Craft",
+    "category": "arts",
+    "district": "Bidar",
+    "state": "Karnataka",
+    "subtitle": "Inlaid Zinc-Copper Alloy Handicraft",
+    "lat": 17.9104,
+    "lng": 77.5199,
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Bidriware",
+      "hi": "बिदरीवेअर"
+    }
+  }
+]

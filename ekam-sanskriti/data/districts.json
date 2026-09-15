@@ -1,0 +1,41 @@
+{
+  "maharashtra": [
+    { "id": "mumbai", "name": "Mumbai", "state": "Maharashtra", "lat": 19.076, "lng": 72.877, "famous_food": "Vada Pav & Pav Bhaji", "famous_art": "Warli Painting", "famous_festival": "Ganesh Chaturthi" },
+    { "id": "pune", "name": "Pune", "state": "Maharashtra", "lat": 18.520, "lng": 73.856, "famous_food": "Misal Pav & Bakarwadi", "famous_art": "Puneri Pagadi & Kolhapuri Crafts", "famous_festival": "Ganeshotsav" },
+    { "id": "aurangabad", "name": "Chhatrapati Sambhajinagar", "state": "Maharashtra", "lat": 19.876, "lng": 75.343, "famous_food": "Naan Qalia", "famous_art": "Himroo Weaving & Paithani Sarees", "famous_festival": "Ellora Festival" }
+  ],
+  "uttar-pradesh": [
+    { "id": "agra", "name": "Agra", "state": "Uttar Pradesh", "lat": 27.176, "lng": 78.008, "famous_food": "Agra Petha & Bedmi Puri", "famous_art": "Pietra Dura Marble Inlay", "famous_festival": "Taj Mahotsav" },
+    { "id": "varanasi", "name": "Varanasi", "state": "Uttar Pradesh", "lat": 25.317, "lng": 82.973, "famous_food": "Banarasi Paan & Kachori Sabzi", "famous_art": "Banarasi Silk Weaving", "famous_festival": "Dev Deepawali" },
+    { "id": "lucknow", "name": "Lucknow", "state": "Uttar Pradesh", "lat": 26.846, "lng": 80.946, "famous_food": "Tanday Kebabs & Biryani", "famous_art": "Chikan Embroidery", "famous_festival": "Lucknow Mahotsav" }
+  ],
+  "tamil-nadu": [
+    { "id": "chennai", "name": "Chennai", "state": "Tamil Nadu", "lat": 13.082, "lng": 80.270, "famous_food": "Filter Coffee & Idli Sambar", "famous_art": "Bharatanatyam & Tanjore Painting", "famous_festival": "Margazhi Festival" },
+    { "id": "madurai", "name": "Madurai", "state": "Tamil Nadu", "lat": 9.925, "lng": 78.119, "famous_food": "Jigarthanda & Kari Dosa", "famous_art": "Sungudi Sarees", "famous_festival": "Chithirai Festival" },
+    { "id": "thanjavur", "name": "Thanjavur", "state": "Tamil Nadu", "lat": 10.787, "lng": 79.137, "famous_food": "Thanjavur Degree Coffee", "famous_art": "Tanjore Paintings & Bronze Idols", "famous_festival": "Sathaya Vizha" }
+  ],
+  "rajasthan": [
+    { "id": "jaipur", "name": "Jaipur", "state": "Rajasthan", "lat": 26.912, "lng": 75.787, "famous_food": "Dal Baati Churma & Ghevar", "famous_art": "Blue Pottery & Block Printing", "famous_festival": "Teej & Gangaur" },
+    { "id": "jodhpur", "name": "Jodhpur", "state": "Rajasthan", "lat": 26.238, "lng": 73.024, "famous_food": "Mawa Kachori & Mirchi Bada", "famous_art": "Bandhani & Leather Handicrafts", "famous_festival": "Marwar Festival" },
+    { "id": "udaipur", "name": "Udaipur", "state": "Rajasthan", "lat": 24.585, "lng": 73.712, "famous_food": "Dal Kachori & Gatte ki Sabzi", "famous_art": "Miniature Painting & Puppetry", "famous_festival": "Mewar Festival" }
+  ],
+  "punjab": [
+    { "id": "amritsar", "name": "Amritsar", "state": "Punjab", "lat": 31.634, "lng": 74.872, "famous_food": "Amritsari Kulcha & Lassi", "famous_art": "Phulkari Embroidery", "famous_festival": "Baisakhi & Gurpurab" }
+  ],
+  "west-bengal": [
+    { "id": "kolkata", "name": "Kolkata", "state": "West Bengal", "lat": 22.572, "lng": 88.363, "famous_food": "Rosogolla & Machher Jhol", "famous_art": "Kantha Embroidery & Clay Idols", "famous_festival": "Durga Puja" }
+  ],
+  "karnataka": [
+    { "id": "mysore", "name": "Mysuru", "state": "Karnataka", "lat": 12.295, "lng": 76.639, "famous_food": "Mysore Pak & Mysore Masala Dosa", "famous_art": "Sandalwood Carving & Mysore Silk", "famous_festival": "Mysore Dasara" },
+    { "id": "hampi", "name": "Vijayanagara (Hampi)", "state": "Karnataka", "lat": 15.335, "lng": 76.460, "famous_food": "Jolada Rotti & Bisi Bele Bath", "famous_art": "Stone Sculptures & Kinnal Toys", "famous_festival": "Hampi Utsav" }
+  ],
+  "gujarat": [
+    { "id": "ahmedabad", "name": "Ahmedabad", "state": "Gujarat", "lat": 23.022, "lng": 72.571, "famous_food": "Khaman Dhokla & Fafda Jalebi", "famous_art": "Patola Weaving & Bandhani", "famous_festival": "Uttarayan (Kite Festival)" }
+  ],
+  "odisha": [
+    { "id": "puri", "name": "Puri", "state": "Odisha", "lat": 19.813, "lng": 85.831, "famous_food": "Mahaprasad & Chhena Poda", "famous_art": "Pattachitra Painting & Applique Work", "famous_festival": "Ratha Yatra" }
+  ],
+  "telangana": [
+    { "id": "hyderabad", "name": "Hyderabad", "state": "Telangana", "lat": 17.385, "lng": 78.486, "famous_food": "Hyderabadi Biryani & Haleem", "famous_art": "Bidriware & Cheriyal Scroll Painting", "famous_festival": "Bonalu & Bathukamma" }
+  ]
+}

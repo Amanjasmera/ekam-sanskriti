@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lesson-1",
+    "title": "Introduction to Warli Art",
+    "artist": "Jivya Soma Mashe",
+    "duration": "10:25",
+    "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "thumbnail": "https://images.unsplash.com/photo-1580136608260-4ebf15facce2"
+  },
+  {
+    "id": "lesson-2",
+    "title": "Basics of Pottery",
+    "artist": "Arun Potter",
+    "duration": "15:40",
+    "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "thumbnail": "https://images.unsplash.com/photo-1610701596007-11502861dcfa"
+  }
+]

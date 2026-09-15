@@ -1,0 +1,428 @@
+[
+  {
+    "slug": "biryani",
+    "name": "Hyderabadi Biryani",
+    "state": "Telangana",
+    "type": "Savory Main",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Hyderabadi_biryani",
+      "hi": "हैदराबादी_बिरयानी",
+      "ta": "பிரியாணி",
+      "te": "బిరియాని",
+      "bn": "বিরিয়ানি",
+      "ur": "بریانی"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "x9wJ3W-Tlcw",
+    "wikiTitle": "Hyderabadi_biryani",
+    "recipe": {
+      "prepTime": "30 mins",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups Basmati Rice",
+        "500g Chicken or Mutton",
+        "1 cup Yogurt",
+        "2 sliced Onions (fried)",
+        "Biryani Spices (Cardamom, Cloves, Cinnamon)",
+        "Mint and Coriander leaves",
+        "Saffron soaked in milk"
+      ],
+      "steps": [
+        "Marinate the meat with yogurt, spices, mint, and coriander for at least 2 hours.",
+        "Partially boil the basmati rice with whole spices until 70% cooked.",
+        "In a heavy-bottomed pot, layer the marinated meat and the partially cooked rice.",
+        "Top with fried onions, saffron milk, and ghee.",
+        "Seal the pot and cook on \"dum\" (slow heat) for 30-40 minutes.",
+        "Serve hot with raita and salan."
+      ]
+    }
+  },
+  {
+    "slug": "dosa",
+    "name": "Crispy Masala Dosa",
+    "state": "Karnataka",
+    "type": "Breakfast / Main",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Dosa_(food)",
+      "hi": "डोसा",
+      "ta": "தோசை",
+      "te": "దోశ",
+      "kn": "ದೋಸೆ",
+      "ml": "ദോശ"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "CCbKxyyP_lQ",
+    "wikiTitle": "Dosa_(food)",
+    "recipe": {
+      "prepTime": "8 hrs (fermentation)",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "3 cups Rice",
+        "1 cup Urad Dal (Black Gram)",
+        "1/2 tsp Fenugreek seeds",
+        "Salt to taste",
+        "Oil or Ghee for cooking",
+        "Potato masala for filling"
+      ],
+      "steps": [
+        "Wash and soak rice, urad dal, and fenugreek seeds for 4-5 hours.",
+        "Grind to a smooth batter and let it ferment overnight (8-10 hours).",
+        "Add salt and mix the batter well.",
+        "Heat a tawa (griddle), pour a ladle of batter, and spread it in a circular motion.",
+        "Drizzle oil or ghee around the edges and cook until crispy and golden brown.",
+        "Add the potato masala in the center, fold, and serve hot with chutney and sambar."
+      ]
+    }
+  },
+  {
+    "slug": "gulab-jamun",
+    "name": "Gulab Jamun Sweet",
+    "state": "Uttar Pradesh",
+    "type": "Sweet Dessert",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Gulab_jamun",
+      "hi": "गुलाब_जामुन",
+      "ta": "குலாப்_ஜாமூன்",
+      "bn": "গোলাপ জামুন"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "samosa",
+    "name": "Crispy Samosa & Chaat",
+    "state": "Delhi",
+    "type": "Snack",
+    "lat": 28.6562,
+    "lng": 77.241,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Samosa",
+      "hi": "समोसा",
+      "ta": "சமோசா",
+      "te": "సమోసా",
+      "bn": "সিঙাড়া"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "jL0D2tQZ7Yw",
+    "wikiTitle": "Samosa",
+    "recipe": {
+      "prepTime": "30 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups All-purpose flour (Maida)",
+        "4 boiled and mashed Potatoes",
+        "1/2 cup Green peas",
+        "Spices (Cumin, Garam Masala, Amchur)",
+        "Oil for deep frying",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Knead the flour with water, a pinch of salt, and a little oil into a stiff dough.",
+        "Prepare the filling by sautéing the mashed potatoes, peas, and spices.",
+        "Divide the dough into small balls and roll them into flat circles.",
+        "Cut the circles in half, form a cone, and stuff it with the potato filling.",
+        "Seal the edges tightly with a little water.",
+        "Deep fry on medium-low heat until golden and crispy. Serve with mint chutney."
+      ]
+    }
+  },
+  {
+    "slug": "rosogolla",
+    "name": "Kolkata Rasgulla",
+    "state": "West Bengal",
+    "type": "Sweet",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Rasgulla",
+      "hi": "रसगुल्ला",
+      "bn": "রসগোল্লা",
+      "or": "ରସଗୋଲା"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "O6g8ZJ46r9k",
+    "wikiTitle": "Rasgulla",
+    "recipe": {
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 liter Full-fat Milk",
+        "2 tbsp Lemon juice or Vinegar",
+        "1.5 cups Sugar",
+        "4 cups Water",
+        "Cardamom pods for flavoring"
+      ],
+      "steps": [
+        "Boil the milk and curdle it by adding lemon juice.",
+        "Drain the whey using a muslin cloth and wash the chenna (curd) under cold water.",
+        "Knead the chenna for 10 minutes until it forms a smooth dough.",
+        "Roll the dough into small, crack-free balls.",
+        "In a wide pan, boil sugar and water to make a light syrup with cardamom.",
+        "Drop the chenna balls into the boiling syrup, cover, and cook for 15-20 minutes until they double in size.",
+        "Let them cool in the syrup and serve chilled."
+      ]
+    }
+  },
+  {
+    "slug": "pav-bhaji",
+    "name": "Mumbai Pav Bhaji",
+    "state": "Maharashtra",
+    "type": "Street Food",
+    "lat": 18.96,
+    "lng": 72.82,
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Pav_bhaji",
+      "hi": "पाव_भाजी",
+      "mr": "पाव_भाजी",
+      "gu": "પાવ_ભાજી"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "t3KzYjXq_yI",
+    "wikiTitle": "Pav_bhaji",
+    "recipe": {
+      "prepTime": "20 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 Pav (bread rolls)",
+        "3 boiled Potatoes",
+        "1 cup chopped Tomatoes",
+        "1/2 cup Peas and Capsicum",
+        "2 tbsp Pav Bhaji Masala",
+        "Butter for toasting",
+        "Chopped onions and coriander for garnish"
+      ],
+      "steps": [
+        "Boil and mash the potatoes, peas, and other vegetables.",
+        "In a large pan, heat butter and sauté onions and capsicum until soft.",
+        "Add chopped tomatoes, pav bhaji masala, and salt. Cook until tomatoes are mushy.",
+        "Mix in the mashed vegetables and add water to adjust consistency. Cook for 10 minutes.",
+        "Slit the pav and toast them on a hot griddle with plenty of butter.",
+        "Serve the hot bhaji topped with butter, chopped onions, and lemon wedges alongside the toasted pav."
+      ]
+    }
+  },
+  {
+    "slug": "chole-bhature",
+    "name": "Amritsari Chole Bhature",
+    "state": "Punjab",
+    "type": "Main Course",
+    "lat": 31.634,
+    "lng": 74.8723,
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Chole_bhature",
+      "hi": "छोले_भटूरे",
+      "pa": "ਛੋਲੇ_ਭਟੂਰੇ"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "04yYhOa1d7A",
+    "wikiTitle": "Chole_bhature",
+    "recipe": {
+      "prepTime": "8 hrs (soaking)",
+      "cookTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup Chickpeas (Chole)",
+        "2 cups All-purpose flour (Maida) for Bhature",
+        "1/2 cup Yogurt",
+        "Onions, Tomatoes, Ginger, Garlic paste",
+        "Chole Masala powder",
+        "Oil for frying"
+      ],
+      "steps": [
+        "Soak chickpeas overnight and pressure cook them until soft.",
+        "For Bhature: Knead the flour, yogurt, a pinch of baking soda, and salt. Let it rest for 2 hours.",
+        "For Chole: Sauté onions, ginger, and garlic in oil. Add tomatoes and cook until oil separates.",
+        "Add Chole Masala, salt, and the boiled chickpeas. Simmer for 15-20 minutes.",
+        "Roll the rested dough into ovals and deep fry in hot oil until they puff up.",
+        "Serve hot, puffy bhature with the spicy chole and pickled onions."
+      ]
+    }
+  },
+  {
+    "slug": "idli",
+    "name": "Idli Sambar & Chutney",
+    "state": "Tamil Nadu",
+    "type": "Breakfast",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Idli",
+      "hi": "इडली",
+      "ta": "இட்லி",
+      "te": "ఇడ్లీ",
+      "kn": "ಇಡ್ಲಿ"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "9Gk5yGvP6bQ",
+    "wikiTitle": "Idli",
+    "recipe": {
+      "prepTime": "8 hrs (fermentation)",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "3 cups Idli Rice",
+        "1 cup Urad Dal (Black Gram)",
+        "Salt to taste",
+        "Water for grinding",
+        "Sambar and Coconut Chutney for serving"
+      ],
+      "steps": [
+        "Wash and soak rice and urad dal separately for 4 hours.",
+        "Grind both to a slightly coarse batter and mix well. Ferment overnight (8-10 hours).",
+        "Add salt to the fermented batter and mix gently.",
+        "Grease the idli molds and pour the batter into them.",
+        "Steam in an idli cooker for 10-12 minutes until a toothpick inserted comes out clean.",
+        "Serve hot and fluffy idlis with sambar and coconut chutney."
+      ]
+    }
+  },
+  {
+    "slug": "jalebi",
+    "name": "Crispy Shahi Jalebi",
+    "state": "Uttar Pradesh",
+    "type": "Sweet",
+    "lat": 27.1751,
+    "lng": 78.0421,
+    "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Jalebi",
+      "hi": "जलेबी",
+      "ta": "ஜிலேபி",
+      "bn": "জিলিপি"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop",
+    "youtubeVideoId": "7X3q_XG-L7M",
+    "wikiTitle": "Jalebi",
+    "recipe": {
+      "prepTime": "24 hrs (fermentation)",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup All-purpose flour (Maida)",
+        "2 tbsp Besan (Gram flour)",
+        "1/2 cup Yogurt",
+        "1 cup Sugar",
+        "1/2 cup Water",
+        "Saffron threads and Cardamom powder",
+        "Ghee or Oil for frying"
+      ],
+      "steps": [
+        "Mix flour, besan, yogurt, and water to make a smooth batter. Ferment for 12-24 hours.",
+        "Prepare the sugar syrup by boiling sugar and water until it reaches one-string consistency. Add saffron and cardamom.",
+        "Pour the fermented batter into a squeeze bottle or a piping bag.",
+        "Squeeze the batter in circular, spiral motions into medium-hot ghee or oil.",
+        "Fry until crisp and golden, then immediately dip into the warm sugar syrup for a minute.",
+        "Remove and serve the crispy, syrupy jalebis hot or cold."
+      ]
+    }
+  },
+  {
+    "slug": "dhokla",
+    "name": "Gujarati Khaman Dhokla",
+    "state": "Gujarat",
+    "type": "Snack",
+    "lat": 23.0225,
+    "lng": 72.5714,
+    "image": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Dhokla",
+      "hi": "ढोकला",
+      "gu": "ઢોકળા"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "litti-chokha",
+    "name": "Bihari Litti Chokha",
+    "state": "Bihar",
+    "type": "Main Course",
+    "lat": 25.5941,
+    "lng": 85.1376,
+    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Litti_(cuisine)",
+      "hi": "लिट्टी-चोखा"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "mysore-pak",
+    "name": "Royal Mysore Pak",
+    "state": "Karnataka",
+    "type": "Sweet",
+    "lat": 12.3052,
+    "lng": 76.6552,
+    "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Mysore_pak",
+      "hi": "मैसूर_पाक",
+      "kn": "ಮೈಸೂರು_పాక్",
+      "ta": "மைசூர்_பாக்"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "vada-pav",
+    "name": "Mumbai Vada Pav",
+    "state": "Maharashtra",
+    "type": "Street Food",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Vada_pav",
+      "hi": "वड़ा_पाव",
+      "mr": "वडा_पाव"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "kheer",
+    "name": "Traditional Rice Kheer",
+    "state": "Uttar Pradesh",
+    "type": "Sweet Dessert",
+    "lat": 25.3176,
+    "lng": 82.9739,
+    "image": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Kheer",
+      "hi": "खीर",
+      "ta": "பாயாசம்",
+      "te": "పాయసం",
+      "bn": "পায়েস"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "dal-baati-churma",
+    "name": "Rajasthani Dal Baati Churma",
+    "state": "Rajasthan",
+    "type": "Traditional Main",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop",
+    "wikipedia_titles": {
+      "en": "Dal_baati",
+      "hi": "दाल_बाटी_चूरमा"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop"
+  }
+]

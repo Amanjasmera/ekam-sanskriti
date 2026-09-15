@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "madhubani-painting",
+    "name": "Madhubani Painting",
+    "state": "Bihar",
+    "type": "arts",
+    "era": "Ancient Mithila Folk Art",
+    "lat": 26.3496,
+    "lng": 86.075,
+    "wikipedia_titles": {
+      "en": "Madhubani_art",
+      "hi": "मधुबनी_चित्रकला"
+    },
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "pashmina-weaving",
+    "name": "Pashmina Shawl Weaving",
+    "state": "Jammu & Kashmir",
+    "type": "arts",
+    "era": "Cashmere Artisan Weave",
+    "lat": 34.0837,
+    "lng": 74.7973,
+    "wikipedia_titles": {
+      "en": "Pashmina",
+      "hi": "पश्मीना"
+    },
+    "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "kanchipuram-silk",
+    "name": "Kanchipuram Silk Sarees",
+    "state": "Tamil Nadu",
+    "type": "arts",
+    "era": "Mulberry Silk Weaving",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "wikipedia_titles": {
+      "en": "Kanchipuram_silk_saree",
+      "hi": "कांचीपुरम_साड़ी"
+    },
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "blue-pottery",
+    "name": "Jaipur Blue Pottery",
+    "state": "Rajasthan",
+    "type": "arts",
+    "era": "Glazed Quartz Craft",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "wikipedia_titles": {
+      "en": "Blue_Pottery_of_Jaipur",
+      "hi": "जयपुर_की_ब्लू_पॉटरी"
+    },
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "bidriware",
+    "name": "Bidriware Metal Inlay",
+    "state": "Karnataka",
+    "type": "arts",
+    "era": "Zinc-Copper Inlaid Craft",
+    "lat": 17.9104,
+    "lng": 77.5199,
+    "wikipedia_titles": {
+      "en": "Bidriware",
+      "hi": "बिदरीवेअर"
+    },
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "tanjore-painting",
+    "name": "Tanjore Gold Leaf Painting",
+    "state": "Tamil Nadu",
+    "type": "arts",
+    "era": "Classical South Indian Art",
+    "lat": 10.787,
+    "lng": 79.1378,
+    "wikipedia_titles": {
+      "en": "Thanjavur_painting",
+      "hi": "तंजौर_चित्रकला"
+    },
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "warli-art",
+    "name": "Warli Tribal Folk Painting",
+    "state": "Maharashtra",
+    "type": "arts",
+    "era": "Ancient Indigenous Wall Art",
+    "lat": 19.9975,
+    "lng": 73.7898,
+    "wikipedia_titles": {
+      "en": "Warli_painting",
+      "hi": "वारली_चित्रकला"
+    },
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "pattachitra",
+    "name": "Odisha Raghurajpur Pattachitra",
+    "state": "Odisha",
+    "type": "arts",
+    "era": "Traditional Scroll Painting",
+    "lat": 19.8135,
+    "lng": 85.8312,
+    "wikipedia_titles": {
+      "en": "Pattachitra",
+      "hi": "पट्टचित्र"
+    },
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "dhokra-craft",
+    "name": "Dhokra Lost-Wax Metal Craft",
+    "state": "Chhattisgarh",
+    "type": "arts",
+    "era": "Bronze Age Non-Ferrous Metal Casting",
+    "lat": 21.2787,
+    "lng": 81.8661,
+    "wikipedia_titles": {
+      "en": "Dhokra",
+      "hi": "ढोकरा_कला"
+    },
+    "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "phulkari",
+    "name": "Phulkari Silk Embroidery",
+    "state": "Punjab",
+    "type": "arts",
+    "era": "Folk Floral Embroidery",
+    "lat": 30.3398,
+    "lng": 76.3869,
+    "wikipedia_titles": {
+      "en": "Phulkari",
+      "hi": "फुलकारी"
+    },
+    "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "channapatna-toys",
+    "name": "Channapatna Wooden Toys",
+    "state": "Karnataka",
+    "type": "arts",
+    "era": "GI Tagged Lacquerware Wood Toy Craft",
+    "lat": 12.6518,
+    "lng": 77.2089,
+    "wikipedia_titles": {
+      "en": "Channapatna_toys",
+      "hi": "चन्नपटना_के_खिलौने"
+    },
+    "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "banarasi-silk",
+    "name": "Banarasi Brocade Silk",
+    "state": "Uttar Pradesh",
+    "type": "arts",
+    "era": "Mughal Influenced Saree Weaving",
+    "lat": 25.3176,
+    "lng": 82.9739,
+    "wikipedia_titles": {
+      "en": "Banarasi_saree",
+      "hi": "बनारसी_साड़ी"
+    },
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "kalamkari",
+    "name": "Kalamkari Hand-Painted Textile",
+    "state": "Andhra Pradesh",
+    "type": "arts",
+    "era": "Pen & Block Print Natural Dye Art",
+    "lat": 16.1809,
+    "lng": 81.1303,
+    "wikipedia_titles": {
+      "en": "Kalamkari",
+      "hi": "कलमकारी"
+    },
+    "image": "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "bandhani",
+    "name": "Gujarat Bandhani Tie-Dye",
+    "state": "Gujarat",
+    "type": "arts",
+    "era": "Traditional Knot & Dye Textile",
+    "lat": 22.4707,
+    "lng": 70.0577,
+    "wikipedia_titles": {
+      "en": "Bandhani",
+      "hi": "बंधेज"
+    },
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "chikankari",
+    "name": "Lucknow Chikankari Embroidery",
+    "state": "Uttar Pradesh",
+    "type": "arts",
+    "era": "Intricate White Thread Needlework",
+    "lat": 26.8467,
+    "lng": 80.9462,
+    "wikipedia_titles": {
+      "en": "Chikan_(embroidery)",
+      "hi": "चिकनकारी"
+    },
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "kantha-stitch",
+    "name": "Bengal Kantha Stitch Craft",
+    "state": "West Bengal",
+    "type": "arts",
+    "era": "Recycled Quilt & Saree Stitching",
+    "lat": 23.685,
+    "lng": 87.6837,
+    "wikipedia_titles": {
+      "en": "Kantha",
+      "hi": "कांथा"
+    },
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "kathputli",
+    "name": "Rajasthani Kathputli Puppetry",
+    "state": "Rajasthan",
+    "type": "arts",
+    "era": "Bhatt Community String Puppet Theatre",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "wikipedia_titles": {
+      "en": "Kathputli_(puppet)",
+      "hi": "कठपुतली"
+    },
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "tarkashi",
+    "name": "Mainpuri Tarkashi Brass Inlay",
+    "state": "Uttar Pradesh",
+    "type": "arts",
+    "era": "Brass Wire Wood Inlay Craft",
+    "lat": 27.2289,
+    "lng": 79.0229,
+    "wikipedia_titles": {
+      "en": "Tarkashi",
+      "hi": "तारकशी"
+    },
+    "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "terracotta-bankura",
+    "name": "Bankura Terracotta Horse Craft",
+    "state": "West Bengal",
+    "type": "arts",
+    "era": "Panchmura Clay Folk Sculpture",
+    "lat": 23.0645,
+    "lng": 87.0371,
+    "wikipedia_titles": {
+      "en": "Bankura_horse",
+      "hi": "बांकुरा_घोड़ा"
+    },
+    "image": "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&auto=format&fit=crop"
+  },
+  {
+    "slug": "gond-painting",
+    "name": "Madhya Pradesh Gond Painting",
+    "state": "Madhya Pradesh",
+    "type": "arts",
+    "era": "Pardhan Gond Tribal Pattern Art",
+    "lat": 23.1815,
+    "lng": 79.9864,
+    "wikipedia_titles": {
+      "en": "Gond_painting",
+      "hi": "गोंड_चित्रकला"
+    },
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&auto=format&fit=crop",
+    "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&auto=format&fit=crop"
+  }
+]
