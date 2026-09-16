@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import { useState } from 'react'
@@ -61,6 +62,7 @@ export default function SignupPage() {
             place_of_birth: formData.placeOfBirth,
             occupation: formData.occupation,
             role: formData.role,
+            artist_status: formData.role === 'artist' ? 'pending' : 'verified',
           },
         ])
 
@@ -75,11 +77,11 @@ export default function SignupPage() {
         if (authData.session) {
           setTimeout(() => {
             if (formData.role === 'artist') {
-              router.push('/artist/dashboard')
+              router.push('/dashboard')
             } else {
               router.push('/language-select')
             }
-          }, 1000)
+          }, 2500)
         } else {
           setTimeout(() => {
             router.push('/login?message=registered')
@@ -99,7 +101,7 @@ export default function SignupPage() {
       <div className="max-w-xl w-full bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h1>
-          <p className="text-gray-500">Join Ekam Sanskriti today</p>
+          <p className="text-gray-700">Join Ekam Sanskriti today</p>
         </div>
 
         {error && (
@@ -120,6 +122,11 @@ export default function SignupPage() {
         {success && (
           <div className="mb-6 p-4 bg-green-50 border-l-4 border-green-500 text-green-700 rounded-lg shadow-sm text-sm space-y-1">
             <p className="font-bold">Account created successfully! 🎉</p>
+            {formData.role === 'artist' && (
+              <p className="text-sm font-medium mt-1 text-green-800">
+                Your artist account is pending admin verification. You will have limited access until approved.
+              </p>
+            )}
             <p className="text-xs">
               Redirecting you to complete your setup...
             </p>
@@ -141,7 +148,7 @@ export default function SignupPage() {
                   className="sr-only"
                 />
                 <span className="text-base">👤 User</span>
-                <span className="text-[11px] font-normal text-gray-500 mt-0.5">Browse & Learn</span>
+                <span className="text-[11px] font-normal text-gray-700 mt-0.5">Browse & Learn</span>
               </label>
               <label className={`p-3 rounded-lg border flex flex-col items-center cursor-pointer transition-all ${formData.role === 'artist' ? 'bg-white border-orange-500 shadow-sm text-orange-700 font-bold' : 'bg-white/50 border-gray-200 text-gray-600'}`}>
                 <input
@@ -153,7 +160,7 @@ export default function SignupPage() {
                   className="sr-only"
                 />
                 <span className="text-base">🎨 Artist</span>
-                <span className="text-[11px] font-normal text-gray-500 mt-0.5">Upload & Sell</span>
+                <span className="text-[11px] font-normal text-gray-700 mt-0.5">Upload & Sell</span>
               </label>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function MarketplacePage() {
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
                       <h4 className="font-semibold text-sm">{product.name}</h4>
-                      <p className="text-xs text-gray-500">{product.description}</p>
+                      <p className="text-xs text-gray-700">{product.description}</p>
                     </div>
                     <div className="flex justify-between items-center mt-2">
                       <span className="font-bold text-green-700">₹{product.price}</span>

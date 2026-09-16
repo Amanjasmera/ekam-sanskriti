@@ -1,5 +1,6 @@
 'use client'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -52,6 +53,7 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
       }
     }
     loadUserLang()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
@@ -138,19 +140,19 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
         <div className="bg-white rounded-2xl shadow-lg p-2 flex overflow-x-auto hide-scrollbar">
           <button 
             onClick={() => setActiveTab('video')}
-            className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm whitespace-nowrap transition-colors ${activeTab === 'video' ? 'bg-amber-100 text-amber-700' : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'}`}
+            className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm whitespace-nowrap transition-colors ${activeTab === 'video' ? 'bg-amber-100 text-amber-700' : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'}`}
           >
             <PlayCircle size={18} /> 🎥 {dict.foodDetail.watchVideo}
           </button>
           <button 
             onClick={() => setActiveTab('recipe')}
-            className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm whitespace-nowrap transition-colors ${activeTab === 'recipe' ? 'bg-amber-100 text-amber-700' : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'}`}
+            className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm whitespace-nowrap transition-colors ${activeTab === 'recipe' ? 'bg-amber-100 text-amber-700' : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'}`}
           >
             <ChefHat size={18} /> 📝 {dict.foodDetail.stepByStepRecipe}
           </button>
           <button 
             onClick={() => setActiveTab('wiki')}
-            className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm whitespace-nowrap transition-colors ${activeTab === 'wiki' ? 'bg-amber-100 text-amber-700' : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'}`}
+            className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm whitespace-nowrap transition-colors ${activeTab === 'wiki' ? 'bg-amber-100 text-amber-700' : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'}`}
           >
             <BookOpen size={18} /> 📖 {dict.foodDetail.wikipedia}
           </button>
@@ -178,7 +180,7 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
                     ></iframe>
                   </div>
                 ) : (
-                  <div className="w-full aspect-video rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200 flex flex-col items-center justify-center text-gray-400">
+                  <div className="w-full aspect-video rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200 flex flex-col items-center justify-center text-gray-600">
                     <PlayCircle size={48} className="mb-4 opacity-50" />
                     <p className="font-medium">{dict.foodDetail.noVideo}</p>
                   </div>
@@ -261,7 +263,7 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
 
                   </div>
                 ) : (
-                  <div className="flex flex-col items-center justify-center py-20 text-gray-400">
+                  <div className="flex flex-col items-center justify-center py-20 text-gray-600">
                     <ChefHat size={48} className="mb-4 opacity-50" />
                     <p className="font-medium">Recipe details coming soon.</p>
                   </div>

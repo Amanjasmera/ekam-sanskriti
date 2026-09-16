@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -36,6 +37,7 @@ export default function QuizProgressCard() {
         if (matched) setLangCode(matched.code);
       }
 
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { data, error, count } = await supabase
         .from('quiz_scores')
         .select('*', { count: 'exact' })

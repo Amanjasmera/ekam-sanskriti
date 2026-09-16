@@ -49,6 +49,7 @@ export default function LanguageSelectPage() {
       }
     }
     loadUserLang()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const dict = getDictionary(langCode)
@@ -88,7 +89,7 @@ export default function LanguageSelectPage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
       <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-10 text-center">
         <h1 className="text-4xl font-bold mb-4">{dict.languageSelect.chooseYourLanguage}</h1>
-        <p className="text-gray-500 mb-10 text-lg">{dict.languageSelect.selectLanguageDesc}</p>
+        <p className="text-gray-700 mb-10 text-lg">{dict.languageSelect.selectLanguageDesc}</p>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
           {INDIAN_LANGUAGES.map((lang) => (

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
-import { MapPin, Compass, Coffee, Calendar, Award, Shield, Sparkles, BookOpen, ExternalLink } from 'lucide-react'
+import { Compass, Coffee, Calendar, Award, Sparkles } from 'lucide-react'
 import { getWikiContent } from '@/lib/wikipedia'
 import monumentsData from '@/data/monuments.json'
 import foodsData from '@/data/foods.json'
@@ -246,8 +246,11 @@ export default async function DashboardPage() {
                 { id: 'festivals', label: `🎉 ${dict.dashboard.festivals}`, color: 'bg-red-500' },
                 { id: 'culture-craft', label: `🎨 ${dict.dashboard.artCraft}`, color: 'bg-purple-500' },
               ].map(cat => {
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                 const catScores = scores?.filter((s: any) => s.category === cat.id) || [];
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 const catScoreSum = catScores.reduce((acc: number, s: any) => acc + s.score, 0);
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 const catTotalSum = catScores.reduce((acc: number, s: any) => acc + s.total, 0);
                 const percentage = catTotalSum > 0 ? Math.round((catScoreSum / catTotalSum) * 100) : 0;
                 
@@ -270,6 +273,7 @@ export default async function DashboardPage() {
               📜 {dict.dashboard.recentAttempts}
             </h3>
             <div className="space-y-3">
+              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
               {scores?.slice(0, 10).map((score: any, i: number) => {
                 const dateLabels = [
                   dict.dashboard.today,

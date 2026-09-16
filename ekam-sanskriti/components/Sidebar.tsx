@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -7,8 +9,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { 
   Home, Compass, Coffee, Calendar, Palette, 
   ShoppingBag, HelpCircle, ScanLine, LogOut, 
-  Settings, User, Globe, Moon, Sun, Menu, X,
-  LayoutDashboard, PlusCircle, BookOpen, MessageSquare, Map, Lock
+  User, Globe, Menu, X,
+  LayoutDashboard, PlusCircle, BookOpen, MessageSquare, Map, Lock, AlertCircle
 } from 'lucide-react'
 import { createClient } from '@/utils/supabase/client'
 import { SUPPORTED_LANGUAGES } from '@/lib/wikipedia'
@@ -25,6 +27,7 @@ export default function Sidebar() {
   const [profile, setProfile] = useState<any>(null)
   const [langCode, setLangCode] = useState<string>('en')
   const [toastMsg, setToastMsg] = useState('')
+  const [showArtistModal, setShowArtistModal] = useState<'pending' | 'rejected' | null>(null)
 
   useEffect(() => {
     async function getProfile() {
@@ -58,13 +61,33 @@ export default function Sidebar() {
       }
     }
     getProfile()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const dict = getDictionary(langCode)
 
-  const isArtist = profile?.role === 'artist'
+  const isLoggedIn = !!profile
+  const role = profile?.role || 'user'
+  const artistStatus = profile?.artist_status || 'none'
+  const isVerifiedArtist = role === 'artist' && artistStatus === 'verified'
 
-  type NavLink = { name: string; href: string; icon: any; isLocked?: boolean }
+  type NavLink = { name: string; href: string; icon: any; isLocked?: boolean; status?: string }
+
+  const getArtistLink = (): NavLink => {
+    if (!isLoggedIn) {
+      return { name: '🔒 Artist', href: '#', icon: Lock, isLocked: true, status: 'logged_out' }
+    }
+    if (role !== 'artist') {
+      return { name: '🔒 Artist', href: '#', icon: Lock, isLocked: true, status: 'not_artist' }
+    }
+    if (artistStatus === 'pending') {
+      return { name: '⏳ Artist (Pending)', href: '#', icon: Lock, isLocked: true, status: 'pending' }
+    }
+    if (artistStatus === 'rejected') {
+      return { name: '❌ Artist (Rejected)', href: '#', icon: Lock, isLocked: true, status: 'rejected' }
+    }
+    return { name: '✅ Artist', href: '/artist/dashboard', icon: LayoutDashboard }
+  }
 
   const userNavLinks: NavLink[] = [
     { name: dict.sidebar.dashboard, href: '/dashboard', icon: Home },
@@ -73,21 +96,22 @@ export default function Sidebar() {
     { name: dict.sidebar.food, href: '/food', icon: Coffee },
     { name: dict.sidebar.festivals, href: '/festivals', icon: Calendar },
     { name: dict.sidebar.cultureCraft, href: '/culture-craft', icon: Palette },
-    { name: 'Artist', href: '#', icon: Lock, isLocked: true },
+    { name: dict.unifiedIndia?.scriptures || 'Scriptures', href: '/scriptures', icon: BookOpen },
+    getArtistLink(),
     { name: dict.sidebar.quiz, href: '/quiz', icon: HelpCircle },
     { name: dict.sidebar.scanner, href: '/scanner', icon: ScanLine },
   ]
 
   const artistNavLinks: NavLink[] = [
+    { name: '✅ Return to App', href: '/dashboard', icon: Home },
     { name: 'Artist Dashboard', href: '/artist/dashboard', icon: LayoutDashboard },
-    { name: 'My Products', href: '/artist/dashboard#products', icon: ShoppingBag },
-    { name: 'Add Product', href: '/artist/dashboard#add-product', icon: PlusCircle },
-    { name: 'Learning Materials', href: '/artist/dashboard#lessons', icon: BookOpen },
-    { name: 'Enquiries', href: '/artist/dashboard#enquiries', icon: MessageSquare },
-    { name: 'Profile', href: '/artist/dashboard#profile', icon: User },
+    { name: 'My Products', href: '/artist/products', icon: ShoppingBag },
+    { name: 'Add Product', href: '/artist/products/new', icon: PlusCircle },
+    { name: 'Enquiries', href: '/artist/enquiries', icon: MessageSquare },
+    { name: 'Profile', href: '/artist/settings', icon: User },
   ]
 
-  const navLinks = isArtist ? artistNavLinks : userNavLinks
+  const navLinks = isVerifiedArtist && pathname.startsWith('/artist') ? artistNavLinks : userNavLinks
 
   const handleLogout = async () => {
     await supabase.auth.signOut()
@@ -115,8 +139,18 @@ export default function Sidebar() {
   const handleLinkClick = (e: React.MouseEvent, link: any) => {
     if (link.isLocked) {
       e.preventDefault()
-      setToastMsg('Only verified artists can access this section. Please sign up as an artist.')
-      setTimeout(() => setToastMsg(''), 3000)
+      if (link.status === 'logged_out') {
+        setToastMsg('Please sign in first')
+      } else if (link.status === 'not_artist') {
+        setToastMsg('You are not registered as an artist...')
+      } else if (link.status === 'pending') {
+        setShowArtistModal('pending')
+      } else if (link.status === 'rejected') {
+        setShowArtistModal('rejected')
+      }
+      if (link.status === 'logged_out' || link.status === 'not_artist') {
+        setTimeout(() => setToastMsg(''), 3000)
+      }
     }
   }
 
@@ -298,6 +332,84 @@ export default function Sidebar() {
           </>
         )}
       </AnimatePresence>
+
+      {/* Artist Modals */}
+      <AnimatePresence>
+        {showArtistModal && (
+          <div className="fixed inset-0 bg-black/60 z-[200] flex items-center justify-center p-4 backdrop-blur-sm">
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl relative"
+            >
+              <button
+                onClick={() => setShowArtistModal(null)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-gray-900"
+              >
+                <X size={24} />
+              </button>
+              
+              <div className="text-center">
+                {showArtistModal === 'pending' ? (
+                  <>
+                    <div className="w-20 h-20 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                      <div className="w-10 h-10 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"></div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Verification Pending</h3>
+                    <p className="text-gray-600">
+                      Your artist profile is currently under review by our team. You will be notified once it's approved.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <div className="w-20 h-20 mx-auto bg-red-100 rounded-full flex items-center justify-center mb-6">
+                      <AlertCircle size={40} className="text-red-500" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Application Rejected</h3>
+                    <p className="text-gray-600 mb-4">
+                      Unfortunately, your artist application was not approved.
+                    </p>
+                    {profile?.artist_notes && (
+                      <div className="bg-red-50 p-3 rounded-lg text-sm text-red-800 font-medium">
+                        Reason: {profile.artist_notes}
+                      </div>
+                    )}
+                  </>
+                )}
+                
+                <button
+                  onClick={() => setShowArtistModal(null)}
+                  className="mt-8 w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 rounded-xl transition-colors"
+                >
+                  Close
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+      {/* Mobile Bottom Navigation */}
+      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-[100] pb-safe">
+        <div className="flex justify-around items-center h-16">
+          <Link href="/dashboard" className={`flex flex-col items-center justify-center w-full h-full ${pathname === '/dashboard' ? 'text-saffron' : 'text-gray-500 hover:text-gray-900'}`}>
+            <Home size={20} className={pathname === '/dashboard' ? 'mb-1 scale-110 transition-transform' : 'mb-1'} />
+            <span className="text-[10px] font-medium">Home</span>
+          </Link>
+          <Link href="/explore" className={`flex flex-col items-center justify-center w-full h-full ${pathname === '/explore' ? 'text-saffron' : 'text-gray-500 hover:text-gray-900'}`}>
+            <Compass size={20} className={pathname === '/explore' ? 'mb-1 scale-110 transition-transform' : 'mb-1'} />
+            <span className="text-[10px] font-medium">Explore</span>
+          </Link>
+          <Link href="/quiz" className={`flex flex-col items-center justify-center w-full h-full ${pathname === '/quiz' ? 'text-saffron' : 'text-gray-500 hover:text-gray-900'}`}>
+            <HelpCircle size={20} className={pathname === '/quiz' ? 'mb-1 scale-110 transition-transform' : 'mb-1'} />
+            <span className="text-[10px] font-medium">Quiz</span>
+          </Link>
+          <button onClick={() => setUserMenuOpen(!userMenuOpen)} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-gray-900">
+            <User size={20} className="mb-1" />
+            <span className="text-[10px] font-medium">Profile</span>
+          </button>
+        </div>
+      </nav>
     </>
   )
 }

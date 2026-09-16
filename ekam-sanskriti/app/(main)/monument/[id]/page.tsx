@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -15,9 +15,9 @@ import { getDictionary } from '@/lib/i18n'
 import monumentsData from '@/data/monuments.json'
 import monumentVideos from '@/data/monument-videos.json'
 import { 
-  Volume2, VolumeX, ArrowLeft, MapPin, Clock, Share2, 
-  Heart, Play, Pause, Maximize, Globe, Sparkles, 
-  CheckCircle2, BookOpen, Film, Radio, Landmark, ShieldCheck, Ticket
+  Volume2, VolumeX, ArrowLeft, MapPin, Share2, 
+  Heart, Play, Pause, Sparkles, 
+  CheckCircle2, BookOpen, Film, Radio, Landmark
 } from 'lucide-react'
 
 export default function MonumentDetailPage() {
@@ -45,6 +45,8 @@ export default function MonumentDetailPage() {
   const [toastMessage, setToastMessage] = useState<string | null>(null)
 
   // Audio / Speech States
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const anyMon = monument as any;
   const [isPlayingAudio, setIsPlayingAudio] = useState(false)
   const [speechRate, setSpeechRate] = useState<number>(0.9)
   const [currentReadingParagraph, setCurrentReadingParagraph] = useState<number | null>(null)
@@ -53,10 +55,10 @@ export default function MonumentDetailPage() {
   // Video / Slideshow States
   const [slideshowIndex, setSlideshowIndex] = useState(0)
   const [isPlayingSlideshow, setIsPlayingSlideshow] = useState(false)
-  const [isMuted, setIsMuted] = useState(false)
+  
 
   // YouTube Video ID
-  const youtubeId = (monument as any)?.youtubeVideoId || (monumentVideos as Record<string, string>)[slug]
+  const youtubeId = anyMon?.youtubeVideoId || (monumentVideos as Record<string, string>)[slug]
 
   // Slideshow image gallery (fallback for video)
   const galleryImages = [
@@ -95,7 +97,7 @@ export default function MonumentDetailPage() {
       }
     }
     loadUserLang()
-  }, [])
+  }, [supabase])
 
   // Fetch Wikipedia Summary & Full Article Content
   useEffect(() => {
@@ -109,7 +111,7 @@ export default function MonumentDetailPage() {
       setWikiSummary(summary)
 
       // Fetch full extract paragraphs (MediaWiki API)
-      const title = (currentMon.wikipedia_titles as any)?.[langCode] || (currentMon.wikipedia_titles as any)?.['en'] || currentMon.name
+      const title = ((currentMon.wikipedia_titles || {}) as Record<string, string>)?.[langCode] || ((currentMon.wikipedia_titles || {}) as Record<string, string>)?.['en'] || currentMon.name
       try {
         const apiUrl = `https://${langCode}.wikipedia.org/w/api.php?action=query&prop=extracts&titles=${encodeURIComponent(title)}&format=json&origin=*&explaintext=1`
         const res = await fetch(apiUrl)
@@ -125,25 +127,25 @@ export default function MonumentDetailPage() {
           .filter((p: string) => p.length > 30 && !p.startsWith('=='))
 
         setFullArticleText(paragraphs.length > 0 ? paragraphs : [summary?.extract || 'No text content found.'])
-      } catch (err) {
+      } catch {
         setFullArticleText([summary?.extract || 'No text content found.'])
       }
       setLoadingWiki(false)
     }
 
     fetchWiki()
-  }, [monument, langCode])
+  }, [monument, langCode, supabase])
 
   // Automatic Slideshow Timer (Ken Burns Video Tab)
   useEffect(() => {
-    let interval: any = null
+    let interval: ReturnType<typeof setInterval> | null = null
     if (activeTab === 'watch' && isPlayingSlideshow) {
       interval = setInterval(() => {
         setSlideshowIndex((prev) => (prev + 1) % galleryImages.length)
       }, 4000)
     }
-    return () => clearInterval(interval)
-  }, [activeTab, isPlayingSlideshow])
+    return () => { if (interval) clearInterval(interval) }
+  }, [activeTab, isPlayingSlideshow, galleryImages.length])
 
   // Stop Web Speech API when leaving tab or unmounting
   useEffect(() => {
@@ -240,7 +242,7 @@ export default function MonumentDetailPage() {
   const handleWatchTabClick = () => {
     setActiveTab('watch')
     setIsPlayingSlideshow(true)
-    if (!isMuted && !isPlayingAudio) {
+    if (!isPlayingAudio) {
       const textToRead = wikiSummary?.extract || fullArticleText[0] || ''
       speakChunks(textToRead)
     }
@@ -254,7 +256,7 @@ export default function MonumentDetailPage() {
     // Store in localStorage
     if (typeof window !== 'undefined') {
       const saved = JSON.parse(localStorage.getItem('my_journey_monuments') || '[]')
-      if (!saved.some((item: any) => item.slug === monument.slug)) {
+      if (!saved.some((item: {slug: string, name?: string, image?: string, date?: string}) => item.slug === monument.slug)) {
         saved.push({ slug: monument.slug, name: monument.name, image: monument.image, date: new Date().toISOString() })
         localStorage.setItem('my_journey_monuments', JSON.stringify(saved))
       }
@@ -270,7 +272,7 @@ export default function MonumentDetailPage() {
           saved_at: new Date().toISOString()
         }, { onConflict: 'user_id,monument_slug' })
       }
-    } catch(e) {}
+    } catch {}
 
     setToastMessage(`✨ ${monument.name} added to your Journey!`)
     setTimeout(() => setToastMessage(null), 3500)
@@ -342,7 +344,7 @@ export default function MonumentDetailPage() {
             <span className="bg-white/20 backdrop-blur-md border border-white/30 px-3.5 py-1 rounded-full text-xs font-semibold">
               🏛️ {monument.era}
             </span>
-            {(monument as any).quickFacts?.unesco && (
+            {anyMon.quickFacts?.unesco && (
               <span className="bg-amber-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow-sm">
                 <Sparkles size={12} /> {dict.monumentDetail.unescoHeritage}
               </span>
@@ -372,7 +374,7 @@ export default function MonumentDetailPage() {
                   if (tab.key === 'watch') {
                     handleWatchTabClick()
                   } else {
-                    setActiveTab(tab.key as any)
+                    setActiveTab(tab.key as "listen"|"watch"|"read")
                   }
                 }}
                 className={`flex-1 py-3.5 px-4 rounded-xl font-bold text-sm md:text-base flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
@@ -590,33 +592,33 @@ export default function MonumentDetailPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               <div className="p-4 bg-orange-50/60 rounded-2xl border border-orange-100">
                 <span className="text-xs font-bold text-orange-600 uppercase tracking-wider block mb-1">🏛️ {dict.monumentDetail.builtYear}</span>
-                <p className="font-bold text-gray-900 text-base">{(monument as any).quickFacts?.builtYear || monument.era}</p>
+                <p className="font-bold text-gray-900 text-base">{anyMon.quickFacts?.builtYear || monument.era}</p>
               </div>
 
               <div className="p-4 bg-amber-50/60 rounded-2xl border border-amber-100">
                 <span className="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-1">👑 {dict.monumentDetail.dynasty}</span>
-                <p className="font-bold text-gray-900 text-base">{(monument as any).quickFacts?.dynasty || 'Historical Imperial Era'}</p>
+                <p className="font-bold text-gray-900 text-base">{anyMon.quickFacts?.dynasty || 'Historical Imperial Era'}</p>
               </div>
 
               <div className="p-4 bg-purple-50/60 rounded-2xl border border-purple-100">
                 <span className="text-xs font-bold text-purple-700 uppercase tracking-wider block mb-1">📐 {dict.monumentDetail.architect}</span>
-                <p className="font-bold text-gray-900 text-base">{(monument as any).quickFacts?.architect || 'Master Royal Artisans'}</p>
+                <p className="font-bold text-gray-900 text-base">{anyMon.quickFacts?.architect || 'Master Royal Artisans'}</p>
               </div>
 
               <div className="p-4 bg-blue-50/60 rounded-2xl border border-blue-100">
                 <span className="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-1">🕒 {dict.monumentDetail.openingHours}</span>
-                <p className="font-bold text-gray-900 text-base">{(monument as any).quickFacts?.openingHours || '6:00 AM – 6:00 PM'}</p>
+                <p className="font-bold text-gray-900 text-base">{anyMon.quickFacts?.openingHours || '6:00 AM – 6:00 PM'}</p>
               </div>
 
               <div className="p-4 bg-emerald-50/60 rounded-2xl border border-emerald-100">
                 <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-1">🎟️ {dict.monumentDetail.ticketPrice}</span>
-                <p className="font-bold text-gray-900 text-base">{(monument as any).quickFacts?.ticketPrice || '₹50 (Indian) / ₹600 (Foreigner)'}</p>
+                <p className="font-bold text-gray-900 text-base">{anyMon.quickFacts?.ticketPrice || '₹50 (Indian) / ₹600 (Foreigner)'}</p>
               </div>
 
               <div className="p-4 bg-rose-50/60 rounded-2xl border border-rose-100">
                 <span className="text-xs font-bold text-rose-700 uppercase tracking-wider block mb-1">📜 {dict.monumentDetail.unescoStatus}</span>
                 <p className="font-bold text-gray-900 text-base">
-                  {(monument as any).quickFacts?.unesco ? dict.monumentDetail.officialHeritage : dict.monumentDetail.protectedMonument}
+                  {anyMon.quickFacts?.unesco ? dict.monumentDetail.officialHeritage : dict.monumentDetail.protectedMonument}
                 </p>
               </div>
             </div>

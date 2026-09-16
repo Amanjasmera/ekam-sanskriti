@@ -43,7 +43,7 @@ export default function QuizLauncherPage() {
 
   const dict = getDictionary(langCode);
 
-  const handleCategoryChange = (e: any) => {
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const cat = e.target.value;
     setCategory(cat);
     if (cat === 'monuments') setItemSlug(monuments[0]?.slug);
@@ -97,7 +97,7 @@ export default function QuizLauncherPage() {
               onChange={(e) => setItemSlug(e.target.value)}
               className="w-full border-2 border-gray-200 p-4 rounded-xl focus:ring-4 focus:ring-orange-500/20 focus:border-orange-500 outline-none font-semibold text-gray-800 bg-gray-50 transition-all cursor-pointer capitalize"
             >
-              {getOptions().map((item: any) => (
+              {getOptions().map((item: {slug: string, name: string}) => (
                 <option key={item.slug} value={item.slug}>
                   {item.name}
                 </option>

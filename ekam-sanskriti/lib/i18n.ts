@@ -279,6 +279,7 @@ export interface Dictionary {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NAME_TO_CODE: Record<string, string> = {
   english: 'en',
   hindi: 'hi',
@@ -307,6 +308,15 @@ const NAME_TO_CODE: Record<string, string> = {
 
 const DICTIONARIES: Record<string, Dictionary> = {
   en: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -557,6 +567,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   hi: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -807,6 +826,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   ta: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -1074,6 +1102,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   bn: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -1324,6 +1361,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   te: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -1574,6 +1620,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   mr: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -1824,6 +1879,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   gu: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -2074,6 +2138,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   kn: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -2324,6 +2397,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   ml: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -2574,6 +2656,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   pa: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -2824,6 +2915,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   ur: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -3074,6 +3174,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   or: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -3324,6 +3433,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   as: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -3574,6 +3692,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   ne: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -3824,6 +3951,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   sa: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -4074,6 +4210,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   sd: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -4324,6 +4469,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   ks: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -4574,6 +4728,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   kok: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -4824,6 +4987,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   doi: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -5074,6 +5246,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   mni: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -5324,6 +5505,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   sat: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -5574,6 +5764,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   mai: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",
@@ -5824,6 +6023,15 @@ const DICTIONARIES: Record<string, Dictionary> = {
     }
   },
   bodo: {
+    unifiedIndia: {
+      scriptures: "Ancient Scriptures",
+      readMore: "Read More",
+      keyTeachings: "Key Teachings",
+      period: "Period",
+      language: "Language",
+      listenToSummary: "Listen to Summary",
+      readFullOnWikipedia: "Read Full on Wikipedia",
+    },
     landingPage: {
       loginSignUp: "Login / Sign Up",
       heroTitle: "Ekam ",

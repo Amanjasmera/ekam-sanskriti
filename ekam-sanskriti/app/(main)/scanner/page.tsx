@@ -80,7 +80,7 @@ export default function QRScannerPage() {
 
       <div className="mt-12 bg-white p-6 rounded-xl border w-full text-left">
         <h3 className="font-bold mb-4">{dict.scannerPage.demoTitle}</h3>
-        <p className="text-sm text-gray-500 mb-4">{dict.scannerPage.demoSubtitle}</p>
+        <p className="text-sm text-gray-700 mb-4">{dict.scannerPage.demoSubtitle}</p>
         <ul className="list-disc pl-5 text-sm font-mono bg-gray-50 p-4 rounded">
           <li>https://ekam-sanskriti.app/monument/taj-mahal</li>
           <li>https://ekam-sanskriti.app/monument/qutub-minar</li>

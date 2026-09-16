@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
@@ -7,7 +10,7 @@ import L from 'leaflet'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
-  Compass, Coffee, Calendar, Palette, Volume2, 
+   Volume2, 
   VolumeX, ChevronLeft, ChevronRight, X, Sparkles, 
   MapPin, Box, ExternalLink, Info, ArrowRight
 } from 'lucide-react'

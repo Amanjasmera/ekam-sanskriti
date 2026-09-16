@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import { useState, useEffect } from 'react'
-import { X, Box, Maximize2, RotateCcw, Sparkles } from 'lucide-react'
+import { X, Box, RotateCcw, Sparkles } from 'lucide-react'
 
 interface ModelViewerModalProps {
   isOpen: boolean
@@ -19,7 +20,7 @@ export default function ModelViewerModal({
   panoramaUrl,
 }: ModelViewerModalProps) {
   const [activeTab, setActiveTab] = useState<'3d' | '360'>('3d')
-  const [modelLoaded, setModelLoaded] = useState(false)
+  
 
   // Inject model-viewer script dynamically
   useEffect(() => {
@@ -81,7 +82,7 @@ export default function ModelViewerModal({
         <div className="flex-1 relative bg-black flex items-center justify-center overflow-hidden">
           {activeTab === '3d' ? (
             <div className="w-full h-full relative">
-              {/* @ts-ignore */}
+              {/* @ts-expect-error - description required */}
               <model-viewer
                 src={modelUrl}
                 alt={`3D Model of ${title}`}
@@ -98,7 +99,7 @@ export default function ModelViewerModal({
                 >
                   <Sparkles size={16} /> View in Your Space (AR)
                 </button>
-              {/* @ts-ignore */}
+              {/* @ts-expect-error - description required */}
               </model-viewer>
 
               <div className="absolute top-4 left-4 bg-gray-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs text-gray-300 border border-gray-700 flex items-center gap-2 pointer-events-none">

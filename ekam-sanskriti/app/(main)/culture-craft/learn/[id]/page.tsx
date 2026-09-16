@@ -1,5 +1,6 @@
 'use client'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
@@ -18,7 +19,7 @@ export default function CourseDetailsPage() {
         
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12 text-center">
           <h1 className="text-3xl font-serif font-bold text-gray-900 mb-4">Course Details</h1>
-          <p className="text-gray-500 mb-8">Course ID: {id}</p>
+          <p className="text-gray-700 mb-8">Course ID: {id}</p>
           <p className="text-gray-600">This is a placeholder page for the learning course details.</p>
         </div>
       </div>

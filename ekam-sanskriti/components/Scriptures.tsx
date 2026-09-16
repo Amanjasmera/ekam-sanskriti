@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import { useState, useEffect } from 'react';
 import AudioButton from '@/components/AudioButton';
@@ -17,7 +18,34 @@ interface Scripture {
   keyTeachings: string[];
 }
 
-const globalWikiCache: Record<string, string> = {};
+const WIKI_CACHE_KEY = 'wiki_cache_data';
+const CACHE_EXPIRY_DAYS = 7;
+
+function getWikiCache(title: string) {
+  if (typeof window === 'undefined') return null;
+  try {
+    const cache = JSON.parse(localStorage.getItem(WIKI_CACHE_KEY) || '{}');
+    const item = cache[title];
+    if (item && item.timestamp && (Date.now() - item.timestamp) < CACHE_EXPIRY_DAYS * 24 * 60 * 60 * 1000) {
+      return item.data;
+    }
+  } catch {
+    // ignore
+  }
+  return null;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function setWikiCache(title: string, data: any) {
+  if (typeof window === 'undefined') return;
+  try {
+    const cache = JSON.parse(localStorage.getItem(WIKI_CACHE_KEY) || '{}');
+    cache[title] = { data, timestamp: Date.now() };
+    localStorage.setItem(WIKI_CACHE_KEY, JSON.stringify(cache));
+  } catch {
+    // ignore
+  }
+}
 
 function useLanguageDict() {
   const [langCode, setLangCode] = useState('en');
@@ -33,6 +61,7 @@ function useLanguageDict() {
       }
     }
   }, []);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return getDictionary(langCode as any);
 }
 
@@ -54,31 +83,49 @@ export function ScripturesSection({ scriptures }: { scriptures: Scripture[] }) {
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function ScriptureCard({ scripture, dict }: { scripture: Scripture, dict: any }) {
   const [imageUrl, setImageUrl] = useState<string>('');
+  const [wikiSummary, setWikiSummary] = useState<string>(scripture.summary);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    async function fetchImage() {
-      if (globalWikiCache[scripture.wikipediaTitle]) {
-        setImageUrl(globalWikiCache[scripture.wikipediaTitle]);
+    async function fetchWikiData() {
+      const cached = getWikiCache(scripture.wikipediaTitle);
+      if (cached) {
+        if (cached.image) setImageUrl(cached.image);
+        if (cached.summary) setWikiSummary(cached.summary);
         return;
       }
+
+      let fetchedImage = '';
+      let fetchedSummary = '';
+
       try {
-        const res = await fetch(`https://en.wikipedia.org/w/api.php?action=query&titles=${scripture.wikipediaTitle}&prop=pageimages&pithumbsize=800&format=json&origin=*`);
-        const data = await res.json();
-        const pages = data.query.pages;
+        // Fetch Image
+        const imgRes = await fetch(`https://en.wikipedia.org/w/api.php?action=query&titles=${scripture.wikipediaTitle}&prop=pageimages&pithumbsize=600&format=json&origin=*`);
+        const imgData = await imgRes.json();
+        const pages = imgData.query.pages;
         const pageId = Object.keys(pages)[0];
         if (pages[pageId].thumbnail) {
-          const url = pages[pageId].thumbnail.source;
-          globalWikiCache[scripture.wikipediaTitle] = url;
-          setImageUrl(url);
+          fetchedImage = pages[pageId].thumbnail.source;
+          setImageUrl(fetchedImage);
         }
+
+        // Fetch Summary
+        const summaryRes = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${scripture.wikipediaTitle}`);
+        const summaryData = await summaryRes.json();
+        if (summaryData.extract) {
+          fetchedSummary = summaryData.extract;
+          setWikiSummary(fetchedSummary);
+        }
+        
+        setWikiCache(scripture.wikipediaTitle, { image: fetchedImage, summary: fetchedSummary });
       } catch (err) {
-        console.error("Failed to fetch image for", scripture.wikipediaTitle, err);
+        console.error("Failed to fetch wiki data for", scripture.wikipediaTitle, err);
       }
     }
-    fetchImage();
+    fetchWikiData();
   }, [scripture.wikipediaTitle]);
 
   return (
@@ -86,6 +133,7 @@ function ScriptureCard({ scripture, dict }: { scripture: Scripture, dict: any })
       <div className="bg-white/80 backdrop-blur-md border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
         <div className="h-48 w-full bg-gray-100 relative overflow-hidden">
           {imageUrl ? (
+            
             <img src={imageUrl} alt={scripture.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-400">
@@ -103,7 +151,7 @@ function ScriptureCard({ scripture, dict }: { scripture: Scripture, dict: any })
         
         <div className="p-5 flex-1 flex flex-col">
           <p className="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">
-            {scripture.summary}
+            {wikiSummary}
           </p>
           <button 
             onClick={() => setIsModalOpen(true)}
@@ -118,6 +166,7 @@ function ScriptureCard({ scripture, dict }: { scripture: Scripture, dict: any })
         <ScriptureModal 
           scripture={scripture} 
           imageUrl={imageUrl} 
+          wikiSummary={wikiSummary}
           onClose={() => setIsModalOpen(false)}
           dict={dict} 
         />
@@ -126,7 +175,8 @@ function ScriptureCard({ scripture, dict }: { scripture: Scripture, dict: any })
   );
 }
 
-function ScriptureModal({ scripture, imageUrl, onClose, dict }: { scripture: Scripture; imageUrl: string; onClose: () => void; dict: any }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function ScriptureModal({ scripture, imageUrl, wikiSummary, onClose, dict }: { scripture: Scripture; imageUrl: string; wikiSummary: string; onClose: () => void; dict: any }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
       <div className="bg-white rounded-3xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-in fade-in zoom-in duration-200">
@@ -139,6 +189,7 @@ function ScriptureModal({ scripture, imageUrl, onClose, dict }: { scripture: Scr
 
         {imageUrl && (
           <div className="w-full h-64 sm:h-80 relative">
+            
             <img src={imageUrl} alt={scripture.name} className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6">
@@ -171,11 +222,11 @@ function ScriptureModal({ scripture, imageUrl, onClose, dict }: { scripture: Scr
             <div className="flex justify-between items-start mb-4">
               <h3 className="text-2xl font-bold text-gray-900 m-0">{dict.unifiedIndia?.scriptures || 'Summary'}</h3>
               <div className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full shadow-inner">
-                <AudioButton text={scripture.summary} lang="en-IN" />
+                <AudioButton text={wikiSummary} lang="en-IN" />
                 <span className="text-sm font-medium text-gray-700">{dict.unifiedIndia?.listenToSummary || 'Listen to Summary'}</span>
               </div>
             </div>
-            <p className="text-gray-700 leading-relaxed text-lg">{scripture.summary}</p>
+            <p className="text-gray-700 leading-relaxed text-lg">{wikiSummary}</p>
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 border border-gray-100 mb-8">
