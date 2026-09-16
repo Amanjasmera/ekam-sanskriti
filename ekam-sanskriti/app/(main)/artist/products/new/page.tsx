@@ -80,13 +80,13 @@ export default function AddNewProduct() {
       for (const file of images) {
         const fileName = `${artistId}/${Date.now()}-${file.name.replace(/[^a-zA-Z0-9.-]/g, '_')}`
         const { error: uploadError } = await supabase.storage
-          .from('artist-products')
+          .from('artist-uploads')
           .upload(fileName, file)
           
         if (uploadError) throw uploadError
         
         const { data: { publicUrl } } = supabase.storage
-          .from('artist-products')
+          .from('artist-uploads')
           .getPublicUrl(fileName)
           
         imageUrls.push(publicUrl)
@@ -97,13 +97,13 @@ export default function AddNewProduct() {
       if (video) {
         const fileName = `${artistId}/${Date.now()}-${video.name.replace(/[^a-zA-Z0-9.-]/g, '_')}`
         const { error: uploadError } = await supabase.storage
-          .from('artist-videos')
+          .from('artist-uploads')
           .upload(fileName, video)
           
         if (uploadError) throw uploadError
         
         const { data: { publicUrl } } = supabase.storage
-          .from('artist-videos')
+          .from('artist-uploads')
           .getPublicUrl(fileName)
           
         videoUrl = publicUrl
