@@ -208,8 +208,8 @@ export default function CultureCraftPage() {
                       <div key={product.id} className="flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_25%] min-w-0 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-xl transition-all group flex flex-col" style={{ transform: 'scale(1)', transition: 'transform 0.2s ease-in-out' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}>
                         <div className="relative h-64 w-full bg-gray-100 overflow-hidden">
                           <img 
-                            src={product.image_url || 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800'} 
-                            alt={product.title}
+                            src={(product.images && product.images.length > 0) ? product.images[0] : (product.image_url || 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800')} 
+                            alt={product.name || product.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800' }}
                           />
@@ -219,8 +219,8 @@ export default function CultureCraftPage() {
                           </div>
                         </div>
                         <div className="p-5 flex-1 flex flex-col">
-                          <p className="text-xs text-orange-600 font-bold mb-1 uppercase tracking-wide">{product.category}</p>
-                          <h3 className="font-bold text-gray-900 text-lg mb-2 line-clamp-2 leading-tight">{product.title}</h3>
+                          <p className="text-xs text-orange-600 font-bold mb-1 uppercase tracking-wide">{product.craft_type || product.category}</p>
+                          <h3 className="font-bold text-gray-900 text-lg mb-2 line-clamp-2 leading-tight">{product.name || product.title}</h3>
                           <p className="text-sm text-gray-700 mb-4 flex items-center gap-1.5">
                             {dict.cultureCraftPage?.by || 'By'} <span className="font-semibold text-gray-700">{product.artist?.full_name || dict.cultureCraftPage?.verifiedArtisan || 'Verified Artisan'}</span>
                             <span className="w-3.5 h-3.5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-[9px]">✓</span>
@@ -238,7 +238,7 @@ export default function CultureCraftPage() {
                                 {dict.cultureCraftPage?.viewDetails || 'View Details'}
                               </Link>
                               <a 
-                                href="https://wa.me/919999999999?text=Hi, I am interested in this craft." 
+                                href={`https://wa.me/?text=Hi ${product.artist?.full_name || 'Artisan'}, I am interested in purchasing ${product.name || product.title}.`} 
                                 target="_blank"
                                 rel="noreferrer"
                                 className="bg-green-50 hover:bg-green-100 text-green-700 text-center px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-green-200"
