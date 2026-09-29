@@ -1,9 +1,29 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Package, Eye, MessageSquare, TrendingUp } from 'lucide-react'
+import { createClient } from '@/utils/supabase/client'
 
 export default function ArtistDashboardOverview() {
+  const [productCount, setProductCount] = useState(0)
+  const supabase = createClient()
+
+  useEffect(() => {
+    async function fetchStats() {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user) {
+        const { count } = await supabase
+          .from('products')
+          .select('*', { count: 'exact', head: true })
+          .eq('artist_id', user.id)
+        
+        if (count !== null) setProductCount(count)
+      }
+    }
+    fetchStats()
+  }, [])
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 10 }} 
@@ -27,7 +47,7 @@ export default function ArtistDashboardOverview() {
             <Package size={24} />
           </div>
           <p className="text-gray-600 font-bold uppercase tracking-wider text-sm mb-1">Total Products</p>
-          <h3 className="text-4xl font-black text-gray-900 drop-shadow-sm">12</h3>
+          <h3 className="text-4xl font-black text-gray-900 drop-shadow-sm">{productCount}</h3>
         </motion.div>
         
         <motion.div 
@@ -39,7 +59,7 @@ export default function ArtistDashboardOverview() {
             <Eye size={24} />
           </div>
           <p className="text-gray-600 font-bold uppercase tracking-wider text-sm mb-1">Profile Views</p>
-          <h3 className="text-4xl font-black text-gray-900 drop-shadow-sm">1,402</h3>
+          <h3 className="text-4xl font-black text-gray-900 drop-shadow-sm">0</h3>
         </motion.div>
 
         <motion.div 
@@ -51,9 +71,8 @@ export default function ArtistDashboardOverview() {
             <MessageSquare size={24} />
           </div>
           <p className="text-gray-600 font-bold uppercase tracking-wider text-sm mb-1">New Enquiries</p>
-          <h3 className="text-4xl font-black text-gray-900 drop-shadow-sm">5</h3>
+          <h3 className="text-4xl font-black text-gray-900 drop-shadow-sm">0</h3>
         </motion.div>
-
       </div>
       
       <div className="glass-card p-8 rounded-3xl shadow-xl border border-white/50 relative overflow-hidden">
@@ -62,16 +81,7 @@ export default function ArtistDashboardOverview() {
           Recent Activity
         </h3>
         <div className="space-y-4">
-          <div className="p-5 border border-white/60 bg-white/40 backdrop-blur-sm rounded-2xl flex items-center gap-4 hover:shadow-md transition-all group">
-            <div className="w-3 h-3 bg-indiaGreen rounded-full shadow-[0_0_8px_rgba(19,136,8,0.5)] group-hover:scale-125 transition-transform"></div>
-            <p className="text-gray-700 flex-1 font-medium">New enquiry on <strong className="text-gray-900 font-bold">Pattachitra Canvas</strong></p>
-            <span className="text-xs text-gray-700 font-bold bg-white/50 px-3 py-1 rounded-full border border-gray-100">2h ago</span>
-          </div>
-          <div className="p-5 border border-white/60 bg-white/40 backdrop-blur-sm rounded-2xl flex items-center gap-4 hover:shadow-md transition-all group">
-            <div className="w-3 h-3 bg-blue-500 rounded-full shadow-[0_0_8px_rgba(59,130,246,0.5)] group-hover:scale-125 transition-transform"></div>
-            <p className="text-gray-700 flex-1 font-medium">Product <strong className="text-gray-900 font-bold">Madhubani Saree</strong> was approved</p>
-            <span className="text-xs text-gray-700 font-bold bg-white/50 px-3 py-1 rounded-full border border-gray-100">1d ago</span>
-          </div>
+          <p className="text-gray-500 text-sm italic">No recent activity found.</p>
         </div>
       </div>
     </motion.div>
