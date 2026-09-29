@@ -50,23 +50,41 @@ export default function CultureCraftPage() {
       // Fetch Products (real data only)
       const { data: pData, error: pErr } = await supabase
         .from('products')
-        .select(`*, artist:profiles(full_name)`)
+        .select(`*`)
         .order('created_at', { ascending: false })
       
       if (!pErr && pData) {
-        setProducts(pData)
+        const artistIds = [...new Set(pData.map(p => p.artist_id).filter(Boolean))];
+        let productsWithArtists = pData;
+        if (artistIds.length > 0) {
+          const { data: profilesData } = await supabase.from('profiles').select('id, full_name').in('id', artistIds);
+          if (profilesData) {
+            const profilesMap = Object.fromEntries(profilesData.map(p => [p.id, p]));
+            productsWithArtists = pData.map(p => ({ ...p, artist: profilesMap[p.artist_id] || null }));
+          }
+        }
+        setProducts(productsWithArtists)
       }
 
       // Fetch Lessons (real data, published, launch_date <= now for live, future for "upcoming")
       // Wait, we need to fetch all published lessons. If launch_date > now, it's "Upcoming"
       const { data: lData, error: lErr } = await supabase
         .from('lessons')
-        .select(`*, artist:profiles(full_name)`)
+        .select(`*`)
         .eq('course_status', 'published')
         .order('launch_date', { ascending: false }) // or created_at
 
       if (!lErr && lData) {
-        setLessons(lData)
+        const artistIds = [...new Set(lData.map(l => l.artist_id).filter(Boolean))];
+        let lessonsWithArtists = lData;
+        if (artistIds.length > 0) {
+          const { data: profilesData } = await supabase.from('profiles').select('id, full_name').in('id', artistIds);
+          if (profilesData) {
+            const profilesMap = Object.fromEntries(profilesData.map(p => [p.id, p]));
+            lessonsWithArtists = lData.map(l => ({ ...l, artist: profilesMap[l.artist_id] || null }));
+          }
+        }
+        setLessons(lessonsWithArtists)
       }
 
       setLoading(false)

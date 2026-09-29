@@ -41,7 +41,7 @@ export async function getQuizQuestions(userId: string, category: string, itemSlu
     return { questions: [], isMastered: false };
   }
 
-  // 2. Get question IDs the user has already answered
+  // 2. Get all attempt records for this user and item
   const { data: attempted } = await supabase
     .from('user_quiz_attempts')
     .select('question_id')
@@ -49,30 +49,30 @@ export async function getQuizQuestions(userId: string, category: string, itemSlu
     .eq('category', category)
     .eq('item_slug', itemSlug);
   
-  const attemptedIds = new Set(attempted?.map(a => a.question_id) || []);
-  
-  // 3. Filter out already-attempted questions
-  let unseen = availableQuestions.filter((q: any) => !attemptedIds.has(q.id));
-  
-  let isMastered = false;
-  
-  // 4. If not enough unseen questions, reset (allow repeats ONLY after all questions have been seen once)
-  if (unseen.length < count) {
-    if (availableQuestions.length >= count && unseen.length === 0) {
-      isMastered = true; // They've answered everything for this item!
-      unseen = availableQuestions;
-    } else if (availableQuestions.length >= count) {
-      // Pad with seen ones to make up the count
-      const seen = availableQuestions.filter((q: any) => attemptedIds.has(q.id));
-      unseen = [...unseen, ...shuffle(seen).slice(0, count - unseen.length)];
-    } else {
-      // Very small set of questions in total
-      unseen = availableQuestions;
-    }
+  // 3. Count attempts per question
+  const attemptCounts: Record<string, number> = {};
+  for (const a of (attempted || [])) {
+    attemptCounts[a.question_id] = (attemptCounts[a.question_id] || 0) + 1;
   }
   
-  // 5. Randomly pick `count` questions and shuffle their options
-  const selectedQuestions = shuffle(unseen).slice(0, count).map(shuffleQuestionOptions);
+  // 4. Find the minimum attempt count across all available questions
+  let minAttempts = 0;
+  if (availableQuestions.length > 0) {
+    minAttempts = Math.min(...availableQuestions.map((q: any) => attemptCounts[q.id] || 0));
+  }
+  
+  // 5. Filter for questions that are at the minimum attempt count (the "unseen" ones for this lap)
+  let unseen = availableQuestions.filter((q: any) => (attemptCounts[q.id] || 0) === minAttempts);
+  
+  let isMastered = minAttempts > 0; // If minAttempts > 0, they've seen everything at least once!
+  
+  // If we somehow don't have enough, we'll just fall back to all available
+  if (unseen.length < count && availableQuestions.length >= count) {
+     unseen = availableQuestions;
+  }
+  
+  // 5. Pick the first `count` unseen questions sequentially and shuffle their options
+  const selectedQuestions = unseen.slice(0, count).map(shuffleQuestionOptions);
   
   return { 
     questions: selectedQuestions, 
