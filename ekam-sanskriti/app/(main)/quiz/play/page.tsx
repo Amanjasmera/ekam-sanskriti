@@ -2,7 +2,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { createClient } from '@/utils/supabase/client';
-import quizBank from '@/data/quiz-questions.json';
+import { getQuizQuestions, saveQuizAttempt } from '@/lib/quiz';
 import { getDictionary } from '@/lib/i18n';
 import { SUPPORTED_LANGUAGES } from '@/lib/wikipedia';
 import PageTransition from '@/components/PageTransition';
@@ -28,60 +28,10 @@ function QuizPlayContent() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [attemptLog, setAttemptLog] = useState<any[]>([]);
 
-  const loadQuizQuestions = async (uid: string, categoryName: string, slug: string) => {
-    // 1. Load all questions for this item
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const allQuestions = (quizBank as any)[categoryName]?.filter(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (q: any) => q.itemSlug === slug
-    ) || [];
-    
-    console.log("Total questions in bank:", allQuestions.length);
-    
-    const supabase = createClient();
-    
-    // 2. Fetch user's already-attempted questions
-    const { data: attempted, error } = await supabase
-      .from('user_quiz_attempts')
-      .select('question_id')
-      .eq('user_id', uid)
-      .eq('category', categoryName)
-      .eq('item_slug', slug);
-    
-    console.log("Previous attempts:", attempted?.length || 0);
-    console.log("Attempts error:", error);
-    
-    const attemptedIds = new Set(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (attempted || []).map((a: any) => a.question_id)
-    );
-    
-    // 3. Filter out already-seen questions
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let unseen = allQuestions.filter((q: any) => !attemptedIds.has(q.id));
-    
-    console.log("Unseen questions:", unseen.length);
-    
-    let isCurrentlyMastered = false;
-    
-    // 4. If not enough unseen, reset and use all
-    if (unseen.length < 5) {
-      console.log("Reset — user has seen all questions");
-      unseen = allQuestions;
-      if (allQuestions.length >= 5) {
-        isCurrentlyMastered = true;
-      }
-    }
-    
-    // 5. Shuffle and pick 5
-    const shuffled = [...unseen].sort(() => Math.random() - 0.5);
-    return { questions: shuffled.slice(0, 5), isMastered: isCurrentlyMastered };
-  };
-
-  const fetchQuestions = async (uid: string) => {
+    const fetchQuestions = async (uid: string) => {
     setLoading(true);
     try {
-      const data = await loadQuizQuestions(uid, category, itemSlug);
+      const data = await getQuizQuestions(uid, category, itemSlug, 5);
       setQuestions(data.questions);
       setIsMastered(data.isMastered);
     } catch (e) {
@@ -158,47 +108,21 @@ function QuizPlayContent() {
       console.log("Item name:", itemName);
       console.log("Score:", finalScore, "/", questions.length);
 
-      const scorePayload = {
-        user_id: user.id,
-        category: category,
-        item_slug: itemSlug,
-        item_name: itemName,
-        score: finalScore,
-        total: questions.length,
-      };
-      
-      console.log("Saving score:", scorePayload);
-      
-      const { data: scoreData, error: scoreError } = await supabase
-        .from('quiz_scores')
-        .insert(scorePayload)
-        .select();
-      
-      if (scoreError) {
-        console.error("Score save FAILED:", scoreError);
-        alert("Could not save score: " + scoreError.message);
-        return; // Don't show results yet if it completely failed
+      try {
+        await saveQuizAttempt(
+          user.id,
+          category,
+          itemSlug,
+          itemName,
+          newAttemptLog,
+          finalScore
+        );
+        console.log("Score and attempts saved successfully via server action");
+      } catch (err) {
+        console.error("Score save FAILED:", err);
+        alert("Could not save score");
+        return;
       }
-      
-      console.log("Score saved successfully:", scoreData);
-
-      const attemptRows = newAttemptLog.map(a => ({
-        user_id: user.id,
-        category: category,
-        item_slug: itemSlug,
-        question_id: a.question_id,
-        is_correct: a.is_correct,
-      }));
-      
-      console.log("Saving attempts:", attemptRows);
-      
-      const { data: attemptData, error: attemptError } = await supabase
-        .from('user_quiz_attempts')
-        .insert(attemptRows)
-        .select();
-      
-      console.log("Attempts saved:", attemptData);
-      console.log("Attempts error:", attemptError);
 
       setShowResults(true);
     }

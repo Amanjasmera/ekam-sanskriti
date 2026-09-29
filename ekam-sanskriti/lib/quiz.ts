@@ -5,7 +5,12 @@ import { createClient } from '@/utils/supabase/server';
 import quizBank from '@/data/quiz-questions.json';
 
 function shuffle<T>(array: T[]): T[] {
-  return [...array].sort(() => 0.5 - Math.random());
+  const result = [...array];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
 }
 
 export async function getQuizQuestions(userId: string, category: string, itemSlug: string, count: number = 5) {
@@ -62,7 +67,7 @@ export async function getQuizQuestions(userId: string, category: string, itemSlu
   };
 }
 
-export async function saveQuizAttempt(userId: string, category: string, itemSlug: string, attempts: { question_id: string, user_answer_index: number, is_correct: boolean }[], finalScore: number) {
+export async function saveQuizAttempt(userId: string, category: string, itemSlug: string, itemName: string, attempts: { question_id: string, user_answer_index: number, is_correct: boolean }[], finalScore: number) {
   const supabase = await createClient();
   
   // Save to user_quiz_attempts
@@ -71,14 +76,10 @@ export async function saveQuizAttempt(userId: string, category: string, itemSlug
     category,
     item_slug: itemSlug,
     question_id: a.question_id,
-    user_answer_index: a.user_answer_index,
     is_correct: a.is_correct
   }));
   
   await supabase.from('user_quiz_attempts').insert(records);
-  
-  // We can also save an aggregate score if there's a quiz_scores table, but user prompt says:
-  // "save to Supabase (both quiz_scores AND user_quiz_attempts)"
   
   // Try inserting into quiz_scores, ignoring errors if it doesn't exist
   try {
@@ -86,8 +87,9 @@ export async function saveQuizAttempt(userId: string, category: string, itemSlug
       user_id: userId,
       category,
       item_slug: itemSlug,
+      item_name: itemName,
       score: finalScore,
-      total_questions: attempts.length
+      total: attempts.length
     });
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (_error) {
