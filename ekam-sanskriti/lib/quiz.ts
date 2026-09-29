@@ -13,6 +13,17 @@ function shuffle<T>(array: T[]): T[] {
   return result;
 }
 
+function shuffleQuestionOptions(q: any) {
+  const originalCorrectOption = q.options[q.correctIndex];
+  const shuffledOptions = shuffle([...q.options]);
+  const newCorrectIndex = shuffledOptions.indexOf(originalCorrectOption);
+  return {
+    ...q,
+    options: shuffledOptions,
+    correctIndex: newCorrectIndex
+  };
+}
+
 export async function getQuizQuestions(userId: string, category: string, itemSlug: string, count: number = 5) {
   const supabase = await createClient();
   
@@ -60,9 +71,11 @@ export async function getQuizQuestions(userId: string, category: string, itemSlu
     }
   }
   
-  // 5. Randomly pick `count` questions
+  // 5. Randomly pick `count` questions and shuffle their options
+  const selectedQuestions = shuffle(unseen).slice(0, count).map(shuffleQuestionOptions);
+  
   return { 
-    questions: shuffle(unseen).slice(0, count), 
+    questions: selectedQuestions, 
     isMastered 
   };
 }
@@ -79,7 +92,11 @@ export async function saveQuizAttempt(userId: string, category: string, itemSlug
     is_correct: a.is_correct
   }));
   
-  await supabase.from('user_quiz_attempts').insert(records);
+  const { error: insertError } = await supabase.from('user_quiz_attempts').insert(records);
+  if (insertError) {
+    console.error("Failed to insert into user_quiz_attempts:", insertError);
+    throw new Error(insertError.message);
+  }
   
   // Try inserting into quiz_scores, ignoring errors if it doesn't exist
   try {
