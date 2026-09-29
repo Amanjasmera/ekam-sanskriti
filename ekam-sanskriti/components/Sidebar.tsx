@@ -69,7 +69,8 @@ export default function Sidebar() {
   const isLoggedIn = !!profile
   const role = profile?.role || 'user'
   const artistStatus = profile?.artist_status || 'none'
-  const isVerifiedArtist = role === 'artist' && artistStatus === 'verified'
+  // Remove strict DB verification for UI toggle
+  const isVerifiedArtist = isLoggedIn
 
   type NavLink = { name: string; href: string; icon: any; isLocked?: boolean; status?: string }
 
@@ -77,16 +78,8 @@ export default function Sidebar() {
     if (!isLoggedIn) {
       return { name: '🔒 Artist', href: '#', icon: Lock, isLocked: true, status: 'logged_out' }
     }
-    if (role !== 'artist') {
-      return { name: '🔒 Artist', href: '#', icon: Lock, isLocked: true, status: 'not_artist' }
-    }
-    if (artistStatus === 'pending') {
-      return { name: '⏳ Artist (Pending)', href: '#', icon: Lock, isLocked: true, status: 'pending' }
-    }
-    if (artistStatus === 'rejected') {
-      return { name: '❌ Artist (Rejected)', href: '#', icon: Lock, isLocked: true, status: 'rejected' }
-    }
-    return { name: '✅ Artist', href: '/artist/dashboard', icon: LayoutDashboard }
+    // If logged in, lock is removed, no DB verification required to enter
+    return { name: 'Artist Dashboard', href: '/artist/dashboard', icon: LayoutDashboard }
   }
 
   const userNavLinks: NavLink[] = [
@@ -111,7 +104,7 @@ export default function Sidebar() {
     { name: 'Profile', href: '/artist/settings', icon: User },
   ]
 
-  const navLinks = isVerifiedArtist && pathname.startsWith('/artist') ? artistNavLinks : userNavLinks
+  const navLinks = isLoggedIn && pathname.startsWith('/artist') ? artistNavLinks : userNavLinks
 
   const handleLogout = async () => {
     await supabase.auth.signOut()

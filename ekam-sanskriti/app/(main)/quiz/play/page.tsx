@@ -74,7 +74,7 @@ function QuizPlayContent() {
     }
     
     // 5. Shuffle and pick 5
-    const shuffled = unseen.sort(() => Math.random() - 0.5);
+    const shuffled = [...unseen].sort(() => Math.random() - 0.5);
     return { questions: shuffled.slice(0, 5), isMastered: isCurrentlyMastered };
   };
 
