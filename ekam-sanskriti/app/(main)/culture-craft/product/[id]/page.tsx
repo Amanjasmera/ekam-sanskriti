@@ -154,7 +154,7 @@ export default function ProductDetailsPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mt-auto">
                 <a 
-                  href={\`https://wa.me/?text=Hi \${encodeURIComponent(artistName)}, I am interested in purchasing "\${encodeURIComponent(product.name)}". Can you provide more details?\`}
+                  href={`https://wa.me/?text=Hi ${encodeURIComponent(artistName)}, I am interested in purchasing "${encodeURIComponent(product.name)}". Can you provide more details?`}
                   target="_blank"
                   rel="noreferrer"
                   className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center px-8 py-4 rounded-xl font-bold transition-all shadow-md hover:shadow-lg text-lg flex items-center justify-center gap-2"
@@ -166,7 +166,7 @@ export default function ProductDetailsPage() {
                     if (navigator.share) {
                       navigator.share({
                         title: product.name,
-                        text: \`Check out \${product.name} crafted by \${artistName}\`,
+                        text: `Check out ${product.name} crafted by ${artistName}`,
                         url: window.location.href,
                       })
                     }
